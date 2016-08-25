@@ -8,6 +8,7 @@
     box-shadow: none;
 }
 #mainContent{
+    margin-top: 50px;
     background: #F6F8FA;
     padding-bottom: 25px;
 }
@@ -60,6 +61,60 @@
     text-align: justify;
 }
 
+.jumbotron{
+    margin-bottom: 0;
+}
+
+#panels-tile, #sheets-tile, #lighting-tile, #thermostat-tile{
+    height: 250px;
+    width:100%;
+    margin-bottom:15px;
+    position:relative;
+    border: 2px solid #3f0c1f;
+    overflow:hidden;
+}
+
+#panels-tile:hover, #sheets-tile:hover, #lighting-tile:hover, #thermostat-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#panels-tile{
+    /*background: url() no-repeat;*/
+    background:#5e5e5e;
+    background-size:cover;
+    background-position: center;
+}
+#sheets-tile{
+    background:#5e5e5e;
+    /*background: url() no-repeat;*/
+    background-size:cover;
+    background-position: center;
+}
+#lighting-tile{
+    background:#5e5e5e;
+    /*background: url() no-repeat;*/
+    background-size:cover;
+    background-position: center;
+}
+#thermostat-tile{
+    background:#5e5e5e;
+    /*background: url() no-repeat;*/
+    background-size:cover;
+    background-position: center;
+}
+
+#panels-tile span, #sheets-tile span, #lighting-tile span, #thermostat-tile span{
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    text-align: center;
+    font-size:1.4em;
+    text-transform: uppercase;
+    background-color: #000;
+    color:#fff;
+    opacity:.7;
+}
 
 /*FOOTER */
 
@@ -100,7 +155,9 @@
 #secondFooter{
     background: #2A2C2B;
 }
-
+.center-block{
+    float:none; !important;
+}
 /* END FOOTER */
 
 
