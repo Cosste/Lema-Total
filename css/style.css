@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+.navbar{
+    margin-bottom: 0;
+    background: #F6F8FA;
+    border: none;
+    box-shadow: none;
+}
+#mainContent{
+    background: #F6F8FA;
+    padding-bottom: 25px;
+}
+/*
+.swiper-container img{
+
+    width: auto;
+    height: 80vh;
+}*/
+
+/* SWIPER START */
+.swiper-container img {
+    width:120%;
+    height:auto;
+}
+
+.swiper-wrapper {
+    height:auto !important;
+}
+
+.swiper-slide {
+    height:auto !important;
+}
+.swiper-slide img{
+    border-radius:15px;
+}
+.swiper-slide-next{
+    opacity: 0.99;
+}
+.swiper-slide-prev{
+    opacity:0.99;
+}
+
+#about{
+    position:static;
+    height: 50%;
+    width:100%;
+    background: #373A39;
+}
+
+/* END SWIPER */
+
+
+#about{
+    color:#FFFFFF;
+}
+
+#about p{
+    margin-top:20px;
+    text-align: justify;
+}
+
+
+/*FOOTER */
+
+.panel-footer {
+    /* bg: */
+    background: #373A39;
+    border: none;
+}
+#phoneNumber {
+    /* Adresa numar de tele: */
+    font-family: OpenSans;
+    font-size: 14px;
+    color: #A8A8A8;
+    line-height: 32px;
+}
+#adress{
+    font-family: OpenSans;
+    font-size: 14px;
+    color: #A8A8A8;
+    line-height: 32px;
+}
+#mail{
+    font-family: OpenSans;
+    font-size: 14px;
+    color: #A8A8A8;
+    line-height: 32px;
+}
+#facebook {
+    /* FACEBOOK: */
+    font-family: Montserrat-Light;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+}
+#firstFooter{
+    border-top: 1px solid black;
+}
+#secondFooter{
+    background: #2A2C2B;
+}
+
+/* END FOOTER */
+
+
