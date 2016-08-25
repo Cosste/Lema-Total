@@ -24,6 +24,12 @@ $(document).ready(function () {
         // And if we need scrollbar
         scrollbar: '.swiper-scrollbar',
     });
+    $("#navbarToggle").blur(function(event){
+        var screenWidth = window.innerWidth;
+        if(screenWidth < 768){
+            $("#collapsable-nav").collapse('hide');
+        }
+    });
     /*
     var trigger = $('.hamburger'),
         overlay = $('.overlay'),
