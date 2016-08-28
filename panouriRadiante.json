@@ -1,0 +1,389 @@
+{
+  "name": "Panouri Radiante",
+  "products": {
+    "P": {
+      "name": "Panouri radiante rezidentiale de sticla THERMOGLASS seria P",
+      "objects": {
+        "Thermoglass P04": {
+          "name":"Thermoglass P04",
+          "image": "",
+          "aplication": "Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante. Se monteaza pe tavan/perete in incaperi mici, precum si cabine de dus, baie si holuri.",
+          "specifications": {
+            "Putere [W]": "400",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "1.8",
+            "Dimensiuni [mm]": "835/150/23",
+            "Greutate [kg]": "2.5",
+            "Suprafata incalzita": "5 - 10 mp",
+            "Inaltime de montaj": "1.8m - 3.0m"
+          },
+          "Catalog": "",
+          "Instructiuni": "",
+          "Foaie produs": ""
+        },
+        "Thermoglass P06": {
+          "name":"Thermoglass P06",
+          "image": "",
+          "aplication": "Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante. Se monteaza pe tavan/perete in incaperi mici, precum si cabine de dus, baie si holuri.",
+          "specifications": {
+            "Putere [W]": "600",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "2.7",
+            "Dimensiuni [mm]": "835/218/23",
+            "Greutate [kg]": "3.3",
+            "Suprafata incalzita": "7 - 14mp",
+            "Inaltime de montaj": "2.2m - 3.0m"
+          },
+          "Catalog": "",
+          "Instructiuni": "",
+          "Foaie produs": ""
+        },
+        "Thermoglass P08": {
+          "image": "",
+          "aplication": "Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante. Se monteaza pe tavan/perete in incaperi mici, precum si cabine de dus, baie si holuri.",
+          "specifications": {
+            "Putere [W]": "800",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "3.6",
+            "Dimensiuni [mm]": "835/268/23",
+            "Greutate [kg]": "4.3",
+            "Suprafata incalzita": "8 - 18mp",
+            "Inaltime de montaj": "2.3m - 3.5m"
+          },
+          "Catalog": "",
+          "Instructiuni": "",
+          "Foaie produs": ""
+        },
+        "Thermoglass P10": {
+          "name":"Thermoglass P10",
+          "image": "",
+          "aplication": "Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante. Se pot monta atat pe tavan cat si pe perete.",
+          "specifications": {
+            "Putere [W]": "1000",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "4.5",
+            "Dimensiuni [mm]": "835/308/23",
+            "Greutate [kg]": "6.0",
+            "Suprafata incalzita": "11 - 22mp",
+            "Inaltime de montaj": "2.5m - 3.5m"
+          },
+          "Catalog": "",
+          "Instructiuni": "",
+          "Foaie produs": ""
+        },
+        "Thermoglass P13": {
+          "name":"Thermoglass P13",
+          "image": "",
+          "aplication": "Incalzitorul este proiectat pentru incalzirea locuintelor cu tavane inalte si este, de asemenea, larg folosit ca sursa de incalzire locala a unor zone mici. Se pot monta atat pe tavan cat si pe perete. Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante.",
+          "specifications": {
+            "Putere [W]": "1300",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "6.1",
+            "Dimensiuni [mm]": "835/398/23",
+            "Greutate [kg]": "9.7",
+            "Suprafata incalzita": "14 - 28mp",
+            "Inaltime de montaj": "2.7m - 4.0m"
+          },
+          "Catalog": "",
+          "Instructiuni": "",
+          "Foaie produs": ""
+        },
+        "Thermoglass P22": {
+          "name":"Thermoglass P22",
+          "image": "",
+          "aplication": "Datorita puterii de 2000W este cel mai puternic din seria incalzitoarelor destinate segmentului rezidential. Incalzitorul este proiectat pentru incalzirea locuintelor cu tavane inalte de pana la 4,5m si este, de asemenea, larg folosit ca sursa de incalzire locala a unor zone mici. Se pot monta atat pe tavan cat si pe perete. Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante.",
+          "specifications": {
+            "Putere [W]": "2000",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "10.0",
+            "Dimensiuni [mm]": "1585/348/23",
+            "Greutate [kg]": "10.8",
+            "Suprafata incalzita": "22 - 44mp",
+            "Inaltime de montaj": "2.7m - 4.5m"
+          },
+          "Catalog": "",
+          "Instructiuni": "",
+          "Foaie produs": ""
+        }
+      }
+    },
+    "PN": {
+      "name": "Panouri radiante rezidentiale de sticla THERMOGLASS seria P",
+      "objects": {
+        "Thermoglass PN07": {
+          "name":"Thermoglass PN07",
+          "image": "",
+          "aplication": "Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante. Se monteaza pe tavan/perete in incaperi mici, precum si cabine de dus, baie si holuri.Pentru ca temperatura la suprafata panoului este de 90°C se poate achizitiona si personalizat.",
+          "specifications": {
+            "Putere [W]": "700",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "3.2",
+            "Dimensiuni [mm]": "1435/410/23",
+            "Greutate [kg]": "11.0",
+            "Suprafata incalzita": "8 - 16 mp",
+            "Personalizare": {
+              "Model 1": "",
+              "Model 2": "",
+              "Model 3": "",
+              "Model 4": ""
+            }
+          },
+          "Catalog": "",
+          "Instructiuni": "",
+          "Foaie produs": ""
+        },
+        "Thermoglass PN09": {
+          "name":"Thermoglass PN09",
+          "image": "",
+          "aplication": "Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante. Se pot monta atat pe tavan cat si pe perete. Pentru ca temperatura la suprafata panoului este de 90°C se poate achizitiona si personalizat.",
+          "specifications": {
+            "Putere [W]": "900",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "4.1",
+            "Dimensiuni [mm]": "1435/510/23",
+            "Greutate [kg]": "14.0",
+            "Suprafata incalzita": "10 - 20mp",
+            "Inaltime de montaj": "2.2m - 3.0m"
+          },
+          "Catalog": "",
+          "Instructiuni": "",
+          "Personalizare": {
+            "Model 1": "",
+            "Model 2": "",
+            "Model 3": "",
+            "Model 4": "",
+            "Model 5": "",
+            "Model 6": ""
+          }
+        },
+        "Thermoglass PN12": {
+          "name":"Thermoglass PN12",
+          "image": "",
+          "aplication": "Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante. Se pot monta atat pe tavan cat si pe perete. Pentru ca temperatura la suprafata panoului este de 90°C se poate achizitiona si personalizat.",
+          "specifications": {
+            "Putere [W]": "900",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "4.1",
+            "Dimensiuni [mm]": "1435/510/23",
+            "Greutate [kg]": "14.0",
+            "Suprafata incalzita": "10 - 20mp",
+            "Personalizare": {
+              "Model 1": "",
+              "Model 2": "",
+              "Model 3": "",
+              "Model 4": "",
+              "Model 5": "",
+              "Model 6": ""
+            }
+          },
+          "Catalog": "",
+          "Instructiuni": "",
+          "Foaie produs": ""
+        }
+      }
+    },
+    "A": {
+      "name": "Panouri radiante rezidentiale de sticla THERMOGLASS seria A"
+    },
+    "LUX": {
+      "name": "Panouri radiante rezidentiale LUX",
+      "details":"Panouri cu o singura placa de incalzire pentru incalzirea locuintelor, birourilor, magazinelor, scolilor, sali de expozitie, spitale, spatii de productie.",
+      "objects": {
+        "LUX P04": {
+          "name":"LUX P04",
+          "image": "",
+          "aplication": "Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante. Se utilizeaza in incaperi mici, precum si cabine de dus, baie si holuri.",
+          "specifications": {
+            "Putere [W]": "400",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "1.8",
+            "Dimensiuni [mm]": "750/125/55",
+            "Greutate [kg]": "2.5",
+            "Suprafata incalzita": "4 - 8mp",
+            "Inaltime de montaj": "1.8m - 3.0m"
+          },
+          "Catalog": "",
+          "Instructiuni": "",
+          "Foaie produs": ""
+        },
+        "LUX P06": {
+          "name":"LUX P06",
+          "image": "",
+          "aplication": "Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante. Se utilizeaza in incaperi mici, precum si cabine de dus, baie si holuri.",
+          "specifications": {
+            "Putere [W]": "600",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "2.7",
+            "Dimensiuni [mm]": "1005/125/55",
+            "Greutate [kg]": "3.3",
+            "Suprafata incalzita": "6 - 12mp",
+            "Inaltime de montaj": "2.2m - 3.0m"
+          },
+          "Catalog": "",
+          "Instructiuni": "",
+          "Foaie produs": ""
+        },
+        "LUX P08": {
+          "image": "",
+          "aplication": "Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante. Se utilizeaza in incaperi mici, precum si cabine de dus, baie si holuri.",
+          "specifications": {
+            "Putere [W]": "800",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "3.6",
+            "Dimensiuni [mm]": "1235/125/55",
+            "Greutate [kg]": "3.5",
+            "Suprafata incalzita": "8 - 16mp",
+            "Inaltime de montaj": "2.3m - 3.5m"
+          },
+          "Catalog": "",
+          "Instructiuni": "",
+          "Foaie produs": ""
+        },
+        "LUX P10": {
+          "name":"LUX P10",
+          "image": "",
+          "aplication": "Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante.",
+          "specifications": {
+            "Putere [W]": "1000",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "4.6",
+            "Dimensiuni [mm]": "1515/125/55",
+            "Greutate [kg]": "4.8",
+            "Suprafata incalzita": "10 - 20mp",
+            "Inaltime de montaj": "2.5m - 3.5m"
+          },
+          "Catalog": "",
+          "Instructiuni": "",
+          "Foaie produs": ""
+        },
+        "LUX P13": {
+          "name":"LUX P13",
+          "image": "",
+          "aplication": "Datorita puterii de 1,3 kW este cel mai puternic din seria incalzitoarelor destinate segmentului rezidential. Incalzitorul este proiectat pentru incalzirea locuintelor cu tavane inalte si este, de asemenea, larg folosit ca sursa de incalzire locala a unor zone mici. Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante.",
+          "specifications": {
+            "Putere [W]": "1300",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "6.1",
+            "Dimensiuni [mm]": "1715/125/55",
+            "Greutate [kg]": "5.3",
+            "Suprafata incalzita": "13 - 26mp",
+            "Inaltime de montaj": "2.7m - 4.0m"
+          },
+          "Catalog": "",
+          "Instructiuni": "",
+          "Foaie produs": ""
+        }
+      }
+    },
+    "I": {
+      "name": "Panouri radiante industriale",
+      "objects": {
+        "Thermoglass P22": {
+          "name":"Thermoglass P22",
+          "image": "",
+          "aplication": "Panouri de incalzire destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca magazine, sali de expozitii, depozite. Modelul este la fel de folosit cu succes pentru incalzirea spatiilor industriale si spatiilor rezidentiale.",
+          "specifications": {
+            "Putere [W]": "2000",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "10.0",
+            "Dimensiuni [mm]": "1585/348/23",
+            "Greutate [kg]": "10.8",
+            "Suprafata incalzita": "22 - 44mp",
+            "Inaltime de montaj": "2.7m - 4.5m"
+          },
+          "Instructiuni": ""
+        },
+        "Thermoglass PN25": {
+          "name":"Thermoglass PN25",
+          "image": "",
+          "aplication": "Panouri de incalzire destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca magazine, sali de expozitii, depozite. Modelul este la fel de folosit cu succes pentru incalzirea spatiilor industriale.",
+          "specifications": {
+            "Putere [W]": "2500",
+            "Tensiune [V]": "380",
+            "Amperaj [A]": "6.0",
+            "Dimensiuni [mm]": "1435/410/23",
+            "Greutate [kg]": "11.0",
+            "Suprafata incalzita": "25 - 50mp",
+            "Inaltime de montaj": "3.0m - 6.0m"
+          },
+          "Instructiuni": ""
+        },
+        "Thermoglass PN30": {
+          "name":"Thermoglass PN30",
+          "image": "",
+          "aplication": "Panouri de incalzire destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca magazine, sali de expozitii, depozite. Modelul este la fel de folosit cu succes pentru incalzirea spatiilor industriale.",
+          "specifications": {
+            "Putere [W]": "3000",
+            "Tensiune [V]": "380",
+            "Amperaj [A]": "7.2",
+            "Dimensiuni [mm]": "1435/510/23",
+            "Greutate [kg]": "14.0",
+            "Suprafata incalzita": "30 - 60mp",
+            "Inaltime de montaj": "min. 3.5m"
+          },
+          "Instructiuni": ""
+        },
+        "Thermoglass PN40": {
+          "name":"Thermoglass PN40",
+          "image": "",
+          "aplication": "Panouri de incalzire destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca magazine, sali de expozitii, depozite. Modelul este la fel de folosit cu succes pentru incalzirea spatiilor industriale.",
+          "specifications": {
+            "Putere [W]": "4000",
+            "Tensiune [V]": "380",
+            "Amperaj [A]": "6.5",
+            "Dimensiuni [mm]": "1435/610/23",
+            "Greutate [kg]": "16.5",
+            "Suprafata incalzita": "40 - 80mp",
+            "Inaltime de montaj": "min. 4.0m"
+          },
+          "Instructiuni": ""
+        },
+        "PRO 20 anticoroziv": {
+          "name":"PRO 20 anticoroziv",
+          "image": "",
+          "aplication": "Panouri cu doua placi de incalzire destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca magazine, sali de expozitii, depozite. Modelul este la fel de folosit cu succes pentru incalzirea spatiilor industriale. Datorita inlocuirii carcasei de metal cu o carcasa de aluminiu panoul se poate folosi in conditii de umiditate ridicata fara a coroda.",
+          "specifications": {
+            "Putere [W]": "2000",
+            "Tensiune [V]": "220",
+            "Amperaj [A]": "9.0",
+            "Dimensiuni [mm]": "1545/300/45",
+            "Greutate [kg]": "8.8",
+            "Suprafata incalzita": "20 - 40mp",
+            "Inaltime de montaj": "3.0m - 6.0m"
+          },
+          "Instructiuni": ""
+        },
+        "PRO 30 anticoroziv": {
+          "name":"PRO 30 anticoroziv",
+          "image": "",
+          "aplication": "Panouri cu doua placi de incalzire destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca magazine, sali de expozitii, depozite. Modelul este la fel de folosit cu succes pentru incalzirea spatiilor industriale. Datorita inlocuirii carcasei de metal cu o carcasa de aluminiu panoul se poate folosi in conditii de umiditate ridicata fara a coroda.",
+          "specifications": {
+            "Putere [W]": "3000",
+            "Tensiune [V]": "380",
+            "Amperaj [A]": "7.9",
+            "Dimensiuni [mm]": "1545/435/45",
+            "Greutate [kg]": "12",
+            "Suprafata incalzita": "30 - 60mp",
+            "Inaltime de montaj": "min. 3.5m"
+          },
+          "Instructiuni": ""
+        },
+        "PRO 40 anticoroziv": {
+          "name":"PRO 40 anticoroziv",
+          "image": "",
+          "aplication": "Panouri cu trei placi de incalzire destinate incalzirii totale sau suplimentare in medii industriale cu tavane foarte inalte precum magazine, hangare, depozite, sali de productie. Datorita inlocuirii carcasei de metal cu o carcasa de aluminiu panoul se poate folosi in conditii de umiditate ridicata fara a coroda.",
+          "specifications": {
+            "Putere [W]": "4000",
+            "Tensiune [V]": "380",
+            "Amperaj [A]": "10.5",
+            "Dimensiuni [mm]": "1720/435/45",
+            "Greutate [kg]": "12",
+            "Suprafata incalzita": "40 - 80mp",
+            "Inaltime de montaj": "min. 4.0m"
+          },
+          "Instructiuni": ""
+        }
+      }
+    }
+  }
+}
