@@ -42,6 +42,7 @@ $(document).ready(function () {
         $.get(homeHTML, function(data){
             $("#mainContent").html(data);
         }).done(function(){
+            //SWIPER
             var mySwiper = new Swiper ('.swiper-container', {
                 // Optional parameters
                 direction: 'horizontal',
@@ -61,7 +62,22 @@ $(document).ready(function () {
                 // And if we need scrollbar
                 scrollbar: '.swiper-scrollbar',
             });
+            if(window.innerWidth < 992) {
+                mySwiper.slidesPerView = 1;
+                mySwiper.effect = "slide";
+            }
+            //LOAD FOLIE RADIANTA
+            $("#sheets-tile").on("click", function(){
+                $.get("snippets/folieRadianta-snippet.html", function(data){
+                    insertHTML("#mainContent", data);
+                });
+            });
+            $(document).ready(function(){
+                $("#panels-tile").on("click", lema.loadProductsCategories);
+            });
         });
+
+        // LOAD PANOURI RADIANTE
 
         lema.loadProductsCategories = function (){
             showLoading("#mainContent");
@@ -71,26 +87,42 @@ $(document).ready(function () {
         function buildAndShowProductsHTML(products){
             $.get(productsTitleHtml, function(productsTitleHtml){
                 //Retrive single product snippet
-                $get(productsHtml, function(productsHtml){
+                $.get(productsHtml, function(productsHtml){
                     var productsViewHtml =
-                        bulidProductsViewHtml(products, productsTitleHtml, productsHtml);
+                        buildProductsViewHtml(products, productsTitleHtml, productsHtml);
                     insertHTML("#mainContect", productsViewHtml);
                 })
-            })
+            });
         }
 
-        function buildProductsViewHtml(products, productsTitleHtml, productsHtml){
-            var finalHtml = productsTitleHtml;
-            finalHtml += "<section class='row";
-            for (var i = 0; i < products.length; i++){
+        function buildProductsViewHtml(product, productsTitleHtml, productsHtml){
+            var finalHtml = insertProperty(productsTitleHtml, "name", product.name);
+            console.log(product.name);
+            finalHtml += "<section class='row'>";
+            for (var i in product.products){
+                console.log(i);
                 var html = productsHtml;
-                var name = "" + products[i].name;
+                var name = "" + product.products[i].name;
                 html = insertProperty(html, "name", name);
-                finalhtml += html;
+                finalHtml += html;
             }
+            finalHtml += "</section></div>";
+            insertHTML("#mainContent", finalHtml);
         }
+
+        lema.loadProductsSubcatgory = function(short_name){
+
+        }
+
+
+
+
+
+
 
         window.$lema = lema;
+
+        //END PANOURI RADIANTE
     })(window);
 
     //initialize swiper when document ready
