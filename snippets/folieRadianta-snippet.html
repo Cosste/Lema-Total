@@ -1,27 +1,41 @@
 <div class="jumbotron">
     <div class="container">
         <h1>Folii radiante</h1>
-        <h3>Galerie foto <a style="font-size: .6em;"> (Click pentru galeria completa)</a></h3>
+        <h3>Galerie foto <a style="font-size: .6em; cursor:pointer;"> (Click pentru galeria completa)</a></h3>
             <!-- Page Content -->
-        <img class="img_01" src="../images/Folie radianta/sisteme-de-incalizre-cu-infrarosu-08_resize.jpg" data-zoom-image="images/Folie radianta/sisteme-de-incalizre-cu-infrarosu-08.jpg"/>
+        <script>
+            function showImage(smSrc, lgSrc) {
+                document.getElementById('largeImg').src = smSrc;
+                showLargeImagePanel();
+                unselectAll();
+                alert("ahoi");
+                setTimeout(function() {
+                    document.getElementById('largeImg').src = lgSrc;
+                }, 1)
+            }
+            function showLargeImagePanel() {
+                document.getElementById('largeImgPanel').style.display = 'block';
+            }
+            function unselectAll() {
+                if(document.selection)
+                    document.selection.empty();
+                if(window.getSelection)
+                    window.getSelection().removeAllRanges();
+            }
+        </script>
+        <img src="images/FolieRadianta/sisteme-de-incalzire-cu-infrarosu-08_resize.jpg" alt="sisteme de incalzire cu infrarosu" style="cursor:pointer"
+             onclick="showImage(this.src, 'images/FolieRadianta/sisteme-de-incalzire-cu-infrarosu-08.jpg');" />
+        <img src="images/FolieRadianta/sisteme-de-incalzire-cu-infrarosu-09_resize.jpg" alt="sisteme de incalzire cu infrarosu" style="cursor:pointer"
+             onclick="showImage(this.src, 'images/FolieRadianta/sisteme-de-incalzire-cu-infrarosu-09.jpg');" />
+        <img src="images/FolieRadianta/sisteme-de-incalzire-cu-infrarosu-10_resize.jpg" alt="sisteme de incalzire cu infrarosu" style="cursor:pointer"
+             onclick="showImage(this.src, 'images/FolieRadianta/sisteme-de-incalzire-cu-infrarosu-10.jpg');" />
 
-        <div class="gal1">
+        <div id="largeImgPanel" onclick="this.style.display='none'">
+            <img id="largeImg"
+                 style="height:100%; margin:0; padding:0;" />
+        </div>
 
-            <a href="#" data-image="images/Folie radianta/sisteme-de-incalizre-cu-infrarosu-09_resize.jpg" data-zoom-image="images/Folie radianta/sisteme-de-incalizre-cu-infrarosu-09">
-                <img class="img_01" src="images/Folie radianta/sisteme-de-incalizre-cu-infrarosu-09_resize.jpg" />
-            </a>
 
-            <a href="#" data-image="images/Folie radianta/sisteme-de-incalizre-cu-infrarosu-10_resize.jpg" data-zoom-image="images/Folie radianta/sisteme-de-incalizre-cu-infrarosu-10">
-                <img class="img_01" src="images/Folie radianta/sisteme-de-incalizre-cu-infrarosu-10_resize.jpg" />
-            </a>
-
-            <a href="#" data-image="images/Folie radianta/sisteme-de-incalizre-cu-infrarosu-11_resize.jpg" data-zoom-image="images/Folie radianta/sisteme-de-incalizre-cu-infrarosu-11">
-                <img class="img_01" src="images/Folie radianta/sisteme-de-incalizre-cu-infrarosu-11_resize.jpg" />
-            </a>
-
-            <img src="../images/Folie radianta/sisteme-de-incalzire-cu-infrarosu-08_resize.jpg" height="112"
-                 width="149"/></div>
-        <img src="../images/potolok3_1920x1200.jpg">
         <article>
             <section>
                 <h2>Incalzirea cu folie radianta</h2>
@@ -61,7 +75,7 @@
                 <p>La trecerea curentului electric prin conductor ( foita rezistiva incalzitoare) acesta se incalzeste pana la 45 ºC.</p>
                 <p>Caldura emisa se transmite catre foita de aluminiu a carei suprafata se incalzeste pana la 43-44 ºC si radiaza caldura sub forma de raze infrarosii.</p>
                 <p>Datorita acestui fapt la suprafata plafonului temperatura ajunge la 30-32 ºC.</p>
-                <img src="../images/Folie%20radianta/incalzirea_cu_folii_radiante.jpg" alt="Elementele foliei radiante">
+                <img class="img-responsive" src="images/FolieRadianta/incalzirea_cu_folii_radiante.jpg" alt="Elementele foliei radiante"/>
                 <p>Una dintre calitatile importante este durata mare de viata a sistemului.</p>
                 <p>Termenul de garantie de la data montarii este de 10 ani.</p>
                 <p>Timpul de exploatare din momentul montajului depaseste 25 de ani.</p>
@@ -99,7 +113,7 @@
         <article>
             <section>
                 <h2>Caracteristici tehnice ale foliei radiante</h2>
-                <div class="col-xs-5"><img src="../images/Folie%20radianta/componente_folii_de_incalzire_zebra_small.jpg" alt="Caracteristici tehnice ale foliei radiante"></div>
+                <div class="col-xs-5"><img class="img-responsive" src="images/FolieRadianta/componente_folii_de_incalzire_zebra_small.jpg" alt="Caracteristici tehnice ale foliei radiante"/></div>
                 <div class="col-xs-7">
                     <ol>
                         <li>cabluri conexiune</li>
@@ -261,13 +275,13 @@
         <article>
             <section>
                 <h2>Certificat CE</h2>
-                <img src="../images/Folie%20radianta/certificat_ce_small.jpg" alt="Certificat CE">
+                <img class="img-responsive" src="images/FolieRadianta/certificat_ce_small.jpg" alt="Certificat CE"/>
             </section>
         </article>
         <article>
             <section>
                 <h3>Pliant folie radianta</h3>
-                <a href="../images/Folie%20radianta/pliant_folie_plen.pdf">Descarca document PDF</a>
+                <a href="images/FolieRadianta/pliant_folie_plen.pdf">Descarca document PDF</a>
             </section>
         </article>
     </div>

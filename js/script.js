@@ -70,7 +70,8 @@ $(document).ready(function () {
             $("#sheets-tile").on("click", function(){
                 $.get("snippets/folieRadianta-snippet.html", function(data){
                     insertHTML("#mainContent", data);
-                }).done(function(){$(".zoom").elevateZoom();});
+                });
+
             });
             $("#thermostat-tile").on("click", loadThermostatCategories);
             $(document).ready(function(){

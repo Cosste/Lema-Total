@@ -64,10 +64,16 @@
 .swiper-slide-prev{
     opacity:0.99;
 }
-#carouselFolieRadianta{
-    width:20%;
-    height: auto;
+
+#largeImgPanel {
+    text-align: center;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background-color: rgba(100,100,100, 0.5);
 }
+
 /* END SWIPER */
 
 #carousel{
@@ -112,27 +118,30 @@
 }
 
 #panels-tile{
-    /*background: url() no-repeat;*/
-    background:#5e5e5e;
+    background: url(../images/PanouriRadiante/panouri_radiante_rezidentiale.jpg) no-repeat;
     background-size:cover;
     background-position: center;
+    cursor:pointer;
 }
 #sheets-tile{
-    background: url("../images/Folie radianta/folii_de_incalzire.jpg") no-repeat;
+    background: url("../images/FolieRadianta/folii_de_incalzire.jpg") no-repeat;
     background-size:cover;
     background-position: center;
+    cursor:pointer;
 }
 #lighting-tile{
     background:#5e5e5e;
-    /*background: url() no-repeat;*/
+    background: url(../images/LightBulb/iluminare_de_urgenta_turnul_luminos.jpg) no-repeat;
     background-size:cover;
     background-position: center;
+    cursor:pointer;
 }
 #thermostat-tile{
-    background:#5e5e5e;
-    /*background: url() no-repeat;*/
+    background: url(../images/Termostat/termostate.jpg) no-repeat;
     background-size:cover;
-    background-position: center;
+    background-position-x: -220px;
+    background-position-y: -20px;
+    cursor:pointer;
 }
 
 #panels-tile span, #sheets-tile span, #lighting-tile span, #thermostat-tile span{
