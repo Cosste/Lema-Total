@@ -39,6 +39,7 @@
           "Foaie produs": ""
         },
         "Thermoglass P08": {
+          "name": "Thermoglass P08",
           "image": "",
           "aplication": "Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante. Se monteaza pe tavan/perete in incaperi mici, precum si cabine de dus, baie si holuri.",
           "specifications": {
@@ -108,7 +109,7 @@
       }
     },
     "PN": {
-      "name": "Panouri radiante rezidentiale de sticla THERMOGLASS seria P",
+      "name": "Panouri radiante rezidentiale de sticla THERMOGLASS seria PN",
       "objects": {
         "Thermoglass PN07": {
           "name":"Thermoglass PN07",
@@ -224,6 +225,7 @@
           "Foaie produs": ""
         },
         "LUX P08": {
+          "name": "LUX P08",
           "image": "",
           "aplication": "Panouri destinate incalzirii totale sau suplimentare sau ca protectie impotriva curentilor reci de aer din preajma geamurilor in medii ca locuinte, birouri, magazine, scoli, spitale, restaurante. Se utilizeaza in incaperi mici, precum si cabine de dus, baie si holuri.",
           "specifications": {

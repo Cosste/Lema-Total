@@ -3,72 +3,31 @@
     "name": "Termostat Q3",
     "manual": "",
     "image": "",
-    "content": [
-      "Modelul Q3 este un termostat simplu, fara program saptamanal.",
-      "Poate comanda un aparat de incalzire sau racire, climatizare.",
-      "Sensibilitatea cuplarii-decuplarii este de ±0,2°C sau ±0.3°C, selectabila.",
-      "Afisajul este usor lizibil si indica atat temperatura setata cat si temperatura existenta in incapere.",
-      "Precizia de afisare este de ±0.1°C.",
-      "Iesirea pentru legaturile electrice se face pe contactele basculante (NO - normal deschis, NC - normal inchis si COM - comun) lipsite de potential electric ale unui releu.",
-      "Contactele releului pot comuta 24 Vcc sau Vca, pana la 230Vca, 50 Hz si un curent de 8A rezistiv, sau 2 A inductiv.",
-      "Functia antiinghet asigura minim 7°C"
-    ]
+    "content": "<p>Modelul Q3 este un termostat simplu, fara program saptamanal.</p><p>Poate comanda un aparat de incalzire sau racire, climatizare.</p><p>Sensibilitatea cuplarii-decuplarii este de ±0,2°C sau ±0.3°C, selectabila.</p><p>Afisajul este usor lizibil si indica atat temperatura setata cat si temperatura existenta in incapere.</p><p>Precizia de afisare este de ±0.1°C.</p><p>Iesirea pentru legaturile electrice se face pe contactele basculante (NO - normal deschis, NC - normal inchis si COM - comun) lipsite de potential electric ale unui releu.</p><p>Contactele releului pot comuta 24 Vcc sau Vca, pana la 230Vca, 50 Hz si un curent de 8A rezistiv, sau 2 A inductiv.</p><p>Functia antiinghet asigura minim 7°C</p>"
   },
   "object2": {
     "name": "Termostat Q7",
     "manual": "",
     "image": "",
-    "content": [
-      "Computherm Q7 este un termostat complex, prezinta multe facilitati, cu toate acestea este foarte usor de programat si de utilizat. Poate comanda un aparat de incalzire sau racire, climatizare. Permite program separat pentru fiecare zi a saptamanii, independent de celelalte zile.",
-      "Programul unei zile este format din 6 perioade de timp, de la P1 pana la P6, cu 6 temperaturi diferite.",
-      "Iesirea pentru legaturile electrice se face pe contactele basculante (NO - normal deschis, NC - normal inchis si COM - comunul) lipsite de potential electric al unui releu. Contactele releului pot comuta 24 Vcc sau Vca, pana la 230Vca, 50 Hz si un curent de 8A rezistiv, sau 2 A inductiv."
-    ]
+    "content":
+      "<p>Computherm Q7 este un termostat complex, prezinta multe facilitati, cu toate acestea este foarte usor de programat si de utilizat. Poate comanda un aparat de incalzire sau racire, climatizare. Permite program separat pentru fiecare zi a saptamanii, independent de celelalte zile.</p><p>Programul unei zile este format din 6 perioade de timp, de la P1 pana la P6, cu 6 temperaturi diferite.</p><p>Iesirea pentru legaturile electrice se face pe contactele basculante (NO - normal deschis, NC - normal inchis si COM - comunul) lipsite de potential electric al unui releu. Contactele releului pot comuta 24 Vcc sau Vca, pana la 230Vca, 50 Hz si un curent de 8A rezistiv, sau 2 A inductiv.</p>"
   },
   "object3": {
     "name": "Termostat Q3RF",
     "manual": "",
     "image": "",
-    "content": [
-      "Termostatul Q3 RF (RF = radiofrecventa) este format din 2 subansambluri: termostatul (emitatorul) si un modul fix (receptorul).",
-      "Termostatul transmite comenzi prin unde radio, pe care receptorul le primeste si comanda pornirea sau oprirea cazanului prin cablu electric conectat intre receptor si cazan.",
-      "Distanta termostatului fata de receptor poate fi de aproximativ 50 m in spatiu deschis si aproximativ 30 m in cladire, in functie de structura cladirii. Lucreaza cu o frecventa purtatoare de 868,35 MHz, pentru o buna stabilitate.",
-      "Receptorul este prevazut cu un buton, MANUAL, care permite comanda manuala."
-    ]
+    "content": "<p>Termostatul Q3 RF (RF = radiofrecventa) este format din 2 subansambluri: termostatul (emitatorul) si un modul fix (receptorul).</p><p>Termostatul transmite comenzi prin unde radio, pe care receptorul le primeste si comanda pornirea sau oprirea cazanului prin cablu electric conectat intre receptor si cazan.</p><p>Distanta termostatului fata de receptor poate fi de aproximativ 50 m in spatiu deschis si aproximativ 30 m in cladire, in functie de structura cladirii. Lucreaza cu o frecventa purtatoare de 868,35 MHz, pentru o buna stabilitate.</p><p>Receptorul este prevazut cu un buton, MANUAL, care permite comanda manuala.</p>"
   },
   "object4": {
     "name": "Termostat Q7RF",
     "manual": "",
     "image": "",
-    "content": [
-      "Modelul Q7RF este un termostat complex, prezinta multe facilitati, cu toate acestea este foarte usor de programat si de utilizat. Poate comanda un aparat de incalzire sau racire, climatizare. Permite program separat pentru fiecare zi a saptamanii, independent de celelalte zile. Programul unei zile este format din 6 perioade de timp, de la P1 pana la P6, cu 6 temperaturi diferite.",
-      "De exemplu:",
-      [
-        "P1 incepe la ora 6:10 (reglaj din 10 in 10 minute) cu temperatura de 20,5 °C (reglaj din 0,5 in 0,5°C).",
-        "P2 incepe la ora 7:50 cu 16,5°C.",
-        "P3: ora 13:00, 20°C,",
-        "P4: ora 14:30, 18°C,",
-        "P5: ora 17:30, 21°C,",
-        "P6: ora 22:00, 18,5°C."
-      ],
-      "Sensibilitatea cuplarii-decuplarii este de ±0,2°C.",
-      "Afisajul poate fi iluminat pentru operarea mai usoara in intuneric. Afisajul este usor lizibil si indica atat temperatura setata cat si temperatura existenta in incapere. Cele doua butoane mari + si -, permit suprascrierea valorii temperaturii setate prin program. Actionand butonul mare + sau - obtinem temperatura dorita intr-unul dintre urmatoarele moduri:",
-      [
-        "pana la urmatorul timp de comutare din program",
-        "pentru 1...9 ore",
-        "pentru 1...99 zile",
-        "pana la o noua interventie manuala"
-      ],
-      "Precizia de afisare este de ±0,5°C."
-    ]
+    "content": "<p>Modelul Q7RF este un termostat complex, prezinta multe facilitati, cu toate acestea este foarte usor de programat si de utilizat. Poate comanda un aparat de incalzire sau racire, climatizare. Permite program separat pentru fiecare zi a saptamanii, independent de celelalte zile. Programul unei zile este format din 6 perioade de timp, de la P1 pana la P6, cu 6 temperaturi diferite.</p><p>De exemplu:</p><ul><li>P1 incepe la ora 6:10 (reglaj din 10 in 10 minute) cu temperatura de 20,5 °C (reglaj din 0,5 in 0,5°C).</li><li>P2 incepe la ora 7:50 cu 16,5°C.</li><li>P3: ora 13:00, 20°C,</li><li>P4: ora 14:30, 18°C,</li><li>P5: ora 17:30, 21°C,</li><li>P6: ora 22:00, 18,5°C.</li></ul><p>Sensibilitatea cuplarii-decuplarii este de ±0,2°C.</p><p>Afisajul poate fi iluminat pentru operarea mai usoara in intuneric. Afisajul este usor lizibil si indica atat temperatura setata cat si temperatura existenta in incapere. Cele doua butoane mari + si -, permit suprascrierea valorii temperaturii setate prin program. Actionand butonul mare + sau - obtinem temperatura dorita intr-unul dintre urmatoarele moduri:</p><ul><li>pana la urmatorul timp de comutare din program</li><li>pentru 1...9 ore</li><li>pentru 1...99 zile</li><li>pana la o noua interventie manuala</li></ul><p>Precizia de afisare este de ±0,5°C.</p>"
   },
   "object5": {
     "manual": "",
     "name": "Termostat Q8RF",
     "image": "",
-    "content": [
-      "Termostatul Q8RF (RF = radiofrecventa) este un termostat multizonal digital programabil. Pachetul de baza contine un receptor si douã termostate. Receptorul poate sesiza semnalele trimise de aceste douã termostate fãrã fir, cu radiofrecventa, amplasate în 2 zone ale cladirii. Setul poate fi extins, la nevoie cu inca unul sau doua termostate.",
-      "Receptorul primeste semnalele transmise de termostatele fara fir si da comanda catre elementele de executie prin inchiderea contactelor celor 4 relee corespunzatoare fiecãrei zone.Termostatele sunt programabile dupa dorinta, asigura CONFORT prin\nobtinerea temperaturilor dorite in zonele diferite.",
-      "Distanta termostatului fata de receptor poate fi de circa 30 m, in functie de structura cladirii."
-    ]
+    "content": "<p>Termostatul Q8RF (RF = radiofrecventa) este un termostat multizonal digital programabil. Pachetul de baza contine un receptor si douã termostate. Receptorul poate sesiza semnalele trimise de aceste douã termostate fãrã fir, cu radiofrecventa, amplasate în 2 zone ale cladirii. Setul poate fi extins, la nevoie cu inca unul sau doua termostate.</p><p>Receptorul primeste semnalele transmise de termostatele fara fir si da comanda catre elementele de executie prin inchiderea contactelor celor 4 relee corespunzatoare fiecãrei zone.Termostatele sunt programabile dupa dorinta, asigura CONFORT prin obtinerea temperaturilor dorite in zonele diferite.</p><p>Distanta termostatului fata de receptor poate fi de circa 30 m, in functie de structura cladirii.</p>"
   }
 }
