@@ -1,5 +1,6 @@
-<div class="container-fluid" id="carousel">
-    <!-- Page Content -->
+<div ng-controller="HomeCtrl">
+    <div class="container-fluid" id="carousel">
+        <!-- Page Content -->
         <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -18,7 +19,19 @@
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
         </div>
+    </div>
 </div>
+
+
+    <ul rn-carousel class="image">
+        <li ng-repeat="image in sportImages">
+            <div class="layer"><img src="images/potolok3_1920x1200.jpg"/></div>
+        </li>
+    </ul>
+    <div rn-carousel-indicators ng-if="slides" slides="slides" rn-carousel-index="carouselIndex"></div>
+
+
+
 <div id="about">
     <div class="container">
         <div class="row">

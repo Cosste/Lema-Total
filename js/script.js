@@ -56,12 +56,7 @@ app.config(function($routeProvider){
             templateUrl:'snippets/iluminareUrgenta-snippet.html',
             controller: 'iluminareController'
         })
-        /*.when('/iluminare',{
-            templateUrl:'snippets/iluminareUrgenta-snippet.html',
-            controller:iluminareController
-        })
-*/
-
+        .otherwise({redirectTo:'/'});
 });
 
 app.controller('homeController',function($scope){
@@ -74,6 +69,31 @@ app.controller('contactController',function($scope){
     $("html, body").animate({ scrollTop: $('#contact').offset().top }, 500);
 });
 
+
+app.controller('HomeCtrl', function ($scope, $rootScope) {
+    var vm = this;
+    var mySwiper = new Swiper('.swiper-container', {
+        observer:true,
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        effect:'coverflow',
+        slidesPerView: 2,
+        centeredSlides: true,
+        grabCursor: true,
+        hashnav:true,
+        // If we need pagination
+        pagination: '.swiper-pagination',
+
+        // Navigation arrows
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });
+
+});
+
+
+angular.module('MyApp', ['angular-carousel']);
 
 function insertHTML(selector, htmlToInsert){
     $(selector).append(htmlToInsert);
@@ -89,7 +109,8 @@ function insertProperty (string, propName, propValue) {
 }
 
 app.controller('HomeController', function($scope){
-    var mySwiper = new Swiper ('.swiper-container', {
+    /*var mySwiper = new Swiper ('.swiper-container', {
+        observer:true,
         // Optional parameters
         direction: 'horizontal',
         loop: true,
@@ -104,8 +125,7 @@ app.controller('HomeController', function($scope){
         // Navigation arrows
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev'
-
-    });
+    });*/
 });
 
 app.controller('ProductsController', function($scope){
@@ -245,6 +265,52 @@ app.controller('termostatController', function($scope){
 
 app.controller('iluminareController', function($scope){});
 
+/*angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) {
+        $scope.slides = [
+            {image: 'images/potolok3_1920x1200.jpg', description: 'Image 00'},
+            {image: 'images/RomanticHome_9009_1920x1200.jpg', description: 'Image 01'},
+            {image: 'images/боковая%20стена_1920x1200.jpg', description: 'Image 02'}
+        ];
+        $scope.currentIndex = 0;
+        $scope.setCurrentSlideIndex = function (index) {
+            $scope.currentIndex = index;
+        };
+        $scope.isCurrentSlideIndex = function (index) {
+            return $scope.currentIndex === index;
+        };
+        $scope.prevSlide = function () {
+            $scope.currentIndex = ($scope.currentIndex < $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
+        };
+        $scope.nextSlide = function () {
+            $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
+        };
+    })
+    .animation('.slide-animation', function () {
+        return {
+            addClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });
+                }
+                else {
+                    done();
+                }
+            },
+            removeClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    element.removeClass('ng-hide');
+                    TweenMax.set(element, { left: element.parent().width() });
+                    TweenMax.to(element, 0.5, {left: 0, onComplete: done });
+                }
+                else {
+                    done();
+                }
+            }
+        };
+    });
+
+*/
+
 $(document).ready(function () {
 
     $("#navbarToggle").blur(function(event){
@@ -260,6 +326,7 @@ $(document).ready(function () {
         ins
     });*/
     (function (window){
+
 
         var lema = {};
 
