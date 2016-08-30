@@ -159,12 +159,12 @@ app.controller('ProductsController', function($scope){
             $.get(productsHtml, function(productsHtml){
                 var productsViewHtml =
                     buildProductsViewHtml(products, productsHtml);
-                insertHTML("#mainContent", productsViewHtml);
+                insertHTML("#links", productsViewHtml);
             });
     }
 
     function buildProductsViewHtml(product, productsHtml){
-        var finalHtml = "<div class='container'>";
+        var finalHtml = "";
         finalHtml += "<section class='row'>";
         for (var i in product.products){
             var html = productsHtml;
@@ -173,11 +173,19 @@ app.controller('ProductsController', function($scope){
             html = insertProperty(html, "shortName", i);
             finalHtml += html;
         }
-        finalHtml += "</section></div></div>";
+        finalHtml += "</section></div>";
         //insertHTML("#mainContent", finalHtml);
         return finalHtml;
     }
+    function insertProductsDetails(){
+        $.get("snippets/products-details.html", function(data){
+            $("#productLinks").append(data);
+        });
+    }
     lema.loadProductsCategories();
+    $.get("snippets/products-details.html",function(data){
+       $("#mainContent").append(data);
+    });
 });
 
 app.controller('productsSubcategoryController', function($scope){
@@ -210,6 +218,7 @@ app.controller('productsSubcategoryController', function($scope){
         for(var i in product.products[lema.shortName].objects){
             var html = productsHtml;
             html = insertProperty(html, "name", product.products[lema.shortName].objects[i].name);
+            html = insertProperty(html, "image", product.products[lema.shortName].objects[i]["image"]);
             html = insertProperty(html, "aplication", product.products[lema.shortName].objects[i].aplication);
             html = insertProperty(html, "putere", product.products[lema.shortName].objects[i].specifications["Putere [W]"]);
             html = insertProperty(html, "tensiune", product.products[lema.shortName].objects[i].specifications["Tensiune [V]"]);
@@ -312,6 +321,7 @@ app.controller('iluminareController', function($scope){});
 */
 
 $(document).ready(function () {
+
 
     $("#navbarToggle").blur(function(event){
         if(window.innerWidth < 768){
