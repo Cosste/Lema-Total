@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eb712b73-a8ad-485d-8857-26e9f4cda0f3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/products-category-title-snippet.html" afterPath="$PROJECT_DIR$/snippets/products-category-title-snippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/products-details.html" afterPath="$PROJECT_DIR$/snippets/products-details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/termostat-title-snippet.html" afterPath="$PROJECT_DIR$/snippets/termostat-title-snippet.html" />
     </list>
     <ignored path="Lema Total.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,28 +30,18 @@
       <file leaf-file-name="home-snippet.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snippets/home-snippet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
+            <state relative-caret-position="1125">
               <caret line="75" column="71" selection-start-line="75" selection-start-column="71" selection-end-line="75" selection-end-column="71" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
+            <state relative-caret-position="15">
               <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Logo Lema Total Impex sized.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/Logo Lema Total Impex sized.svg">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,55 +67,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="167" column="66" selection-start-line="167" selection-start-column="66" selection-end-line="167" selection-end-column="66" />
-              <folding>
-                <element signature="e#0#50#0" expanded="false" />
-                <element signature="e#132#2208#0" expanded="false" />
-                <element signature="e#2260#2343#0" expanded="false" />
-                <element signature="e#2397#2478#0" expanded="false" />
-                <element signature="e#2674#3187#0" expanded="false" />
-                <element signature="n#!!block;n#insertHTML#0" expanded="false" />
-                <element signature="n#!!block;n#showLoading#0" expanded="false" />
-                <element signature="n#!!block;n#insertProperty#0" expanded="false" />
-                <element signature="e#3714#4212#0" expanded="false" />
-                <element signature="e#9513#9517#0" expanded="false" />
-                <element signature="e#9575#10648#0" expanded="false" />
-                <marker date="1472623530000" expanded="false" signature="10801:11684" ph="{...}" />
-                <marker date="1472623530000" expanded="false" signature="11733:12495" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="products-category-snippet.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/snippets/products-category-snippet.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="34" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="folieRadianta-snippet.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/snippets/folieRadianta-snippet.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="793">
-              <caret line="130" column="17" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="products-category-title-snippet.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/snippets/products-category-title-snippet.html">
+      <file leaf-file-name="products-title-snippet.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/snippets/products-title-snippet.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="termostat-snippet.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/snippets/termostat-snippet.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="termostat-title-snippet.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/snippets/termostat-title-snippet.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products-details.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/snippets/products-details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="673">
+              <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products-snippet.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/snippets/products-snippet.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -173,11 +157,8 @@
         <option value="$PROJECT_DIR$/snippets/iluminareUrgenta-snippet.html" />
         <option value="$PROJECT_DIR$/js/angular-ezplus.js" />
         <option value="$PROJECT_DIR$/js/jquery.elevatezoom.js" />
-        <option value="$PROJECT_DIR$/snippets/termostat-title-snippet.html" />
         <option value="$PROJECT_DIR$/js/angular-touch.js" />
         <option value="$PROJECT_DIR$/snippets/products-snippet.html" />
-        <option value="$PROJECT_DIR$/snippets/products-title-snippet.html" />
-        <option value="$PROJECT_DIR$/snippets/products-details.html" />
         <option value="$PROJECT_DIR$/snippets/termostat-snippet.html" />
         <option value="$PROJECT_DIR$/termostat.json" />
         <option value="$PROJECT_DIR$/snippets/products-category-snippet.html" />
@@ -188,6 +169,9 @@
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/snippets/products-details.html" />
+        <option value="$PROJECT_DIR$/snippets/products-title-snippet.html" />
+        <option value="$PROJECT_DIR$/snippets/termostat-title-snippet.html" />
       </list>
     </option>
   </component>
@@ -227,7 +211,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -257,12 +240,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="snippets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lema Total" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lema Total" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,11 +389,12 @@
       <workItem from="1472578113569" duration="12530000" />
       <workItem from="1472617734412" duration="375000" />
       <workItem from="1472622503694" duration="2477000" />
+      <workItem from="1472626598165" duration="265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107252000" />
+    <option name="totallyTimeSpent" value="107517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="967" extended-state="6" />
@@ -698,13 +697,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/termostat-title-snippet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="167" selection-start-line="4" selection-start-column="167" selection-end-line="4" selection-end-column="167" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/snippets/iluminareUrgenta-snippet.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -730,28 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/products-snippet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/products-title-snippet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="74" selection-start-line="0" selection-start-column="74" selection-end-line="0" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/products-details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -767,29 +737,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/termostat-snippet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/panouriRadiante.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="287" column="30" selection-start-line="287" selection-start-column="27" selection-end-line="287" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!block;n#P#0;n#!!block;n#products#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#PN#0;n#!!block;n#products#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#A#0;n#!!block;n#products#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#LUX#0;n#!!block;n#products#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/snippets/folieRadianta-snippet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="793">
+        <state relative-caret-position="1950">
           <caret line="130" column="17" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
           <folding />
         </state>
@@ -813,7 +763,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
+        <state relative-caret-position="930">
           <caret line="167" column="66" selection-start-line="167" selection-start-column="66" selection-end-line="167" selection-end-column="66" />
           <folding>
             <element signature="e#0#50#0" expanded="false" />
@@ -851,8 +801,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/snippets/home-snippet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
+        <state relative-caret-position="1125">
           <caret line="75" column="71" selection-start-line="75" selection-start-column="71" selection-end-line="75" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panouriRadiante.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="287" column="30" selection-start-line="287" selection-start-column="27" selection-end-line="287" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!block;n#P#0;n#!!block;n#products#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#PN#0;n#!!block;n#products#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#A#0;n#!!block;n#products#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#LUX#0;n#!!block;n#products#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/products-snippet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/products-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/products-title-snippet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/termostat-snippet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -865,10 +868,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/snippets/termostat-title-snippet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
           <folding />
         </state>
       </provider>
