@@ -2,11 +2,17 @@
     box-sizing: border-box;
     text-align: justify;
 }
+* p{
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+}
 .navbar{
     margin-bottom: 0;
     background: #F6F8FA;
     border: none;
     box-shadow: none;
+}
+.navbar a:hover{
+    text-decoration: underline;
 }
 #mainContent{
     margin-top: 50px;
@@ -16,6 +22,26 @@
 .container{
     padding:0 25px;
 }
+
+.navbarContact{
+    margin-top:28px;
+    margin-right:3px;
+    font-size:23px!important;
+}
+object.navbar-brand{
+    position:relative;
+    top:-10px;
+    width:170px;
+    height: auto;
+    padding-bottom: 0;
+}
+
+.panel-footer object{
+    width:170px;
+    height: auto;
+    padding:0;
+}
+
 /*
 .swiper-container img{
 
@@ -26,7 +52,7 @@
 #callBtn{
     font-size: 1.5em;
     display: block;
-    margin-top:55px;
+    margin-top:75px;
     padding: 10px;
     border: 2px solid #fff;
     background-color: #5bc0de;
@@ -204,5 +230,10 @@
 #sheetsView p{
     font-size:16px;
     text-indent: 25px;
+}
+
+.panouriRadianteCategorii{
+    font-size:22px;
+    text-decoration: none;
 }
 

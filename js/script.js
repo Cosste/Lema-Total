@@ -165,7 +165,7 @@ app.controller('ProductsController', function($scope){
 
     function buildProductsViewHtml(product, productsHtml){
         var finalHtml = "";
-        finalHtml += "<section class='row'>";
+        finalHtml += "<section class='row panouriRadianteCategorii'>";
         for (var i in product.products){
             var html = productsHtml;
             var name = "" + product.products[i].name;
