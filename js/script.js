@@ -278,7 +278,9 @@ app.controller('termostatController', function($scope){
 
 });
 
-app.controller('iluminareController', function($scope){});
+app.controller('iluminareController', function($scope){
+    $("html, body").animate({ scrollTop: $('#Title').offset().top }, 1);
+});
 
 app.controller('certificateController', function(){
     var modal = document.getElementById('myModal');
