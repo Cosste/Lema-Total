@@ -266,4 +266,7 @@ object.navbar-brand{
     font-size:22px;
     text-decoration: none;
 }
+.mainTitle{
+    margin-top:9vh;
+}
 

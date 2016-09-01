@@ -232,6 +232,7 @@ app.controller('productsSubcategoryController', function($scope){
             html = insertProperty(html, "catalog", product.products[lema.shortName].objects[i].Catalog);
             html = insertProperty(html, "instructiuni", product.products[lema.shortName].objects[i].Instructiuni);
             html = insertProperty(html, "foaieProdus", product.products[lema.shortName].objects[i]["Foaie produs"]);
+            html = insertProperty(html, "garantie", product.products[lema.shortName].objects[i]["Garantie"]);
             finalHtml += html;
         }
         finalHtml += "</section></div></div>";

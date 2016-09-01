@@ -18,9 +18,10 @@
             "Suprafata incalzita": "4 - 8mp",
             "Inaltime de montaj": "1.8m - 3.0m"
           },
-          "Catalog": "",
-          "Instructiuni": "",
-          "Foaie produs": ""
+          "Garantie":"3",
+          "Catalog": "files/catalog_panouri_radiante.pdf",
+          "Instructiuni": "files/instructiuni_LUX_P04_06_10_13.pdf",
+          "Foaie produs": "files/foaie_produs_Lux.pdf"
         },
         "LUX P06": {
           "name":"LUX P06",
@@ -35,9 +36,10 @@
             "Suprafata incalzita": "6 - 12mp",
             "Inaltime de montaj": "2.2m - 3.0m"
           },
-          "Catalog": "",
-          "Instructiuni": "",
-          "Foaie produs": ""
+          "Garantie":"3",
+          "Catalog": "files/catalog_panouri_radiante.pdf",
+          "Instructiuni": "files/instructiuni_LUX_P04_06_10_13.pdf",
+          "Foaie produs": "files/foaie_produs_Lux.pdf"
         },
         "LUX P08": {
           "name": "LUX P08",
@@ -52,9 +54,10 @@
             "Suprafata incalzita": "8 - 16mp",
             "Inaltime de montaj": "2.3m - 3.5m"
           },
-          "Catalog": "",
-          "Instructiuni": "",
-          "Foaie produs": ""
+          "Garantie":"3",
+          "Catalog": "files/catalog_panouri_radiante.pdf",
+          "Instructiuni": "files/instructiuni_LUX_P04_06_10_13.pdf",
+          "Foaie produs": "files/foaie_produs_Lux.pdf"
         },
         "LUX P10": {
           "name":"LUX P10",
@@ -69,9 +72,10 @@
             "Suprafata incalzita": "10 - 20mp",
             "Inaltime de montaj": "2.5m - 3.5m"
           },
-          "Catalog": "",
-          "Instructiuni": "",
-          "Foaie produs": ""
+          "Garantie":"3",
+          "Catalog": "files/catalog_panouri_radiante.pdf",
+          "Instructiuni": "files/instructiuni_LUX_P04_06_10_13.pdf",
+          "Foaie produs": "files/foaie_produs_Lux.pdf"
         },
         "LUX P13": {
           "name":"LUX P13",
@@ -86,9 +90,10 @@
             "Suprafata incalzita": "13 - 26mp",
             "Inaltime de montaj": "2.7m - 4.0m"
           },
-          "Catalog": "",
-          "Instructiuni": "",
-          "Foaie produs": ""
+          "Garantie":"3",
+          "Catalog": "files/catalog_panouri_radiante.pdf",
+          "Instructiuni": "files/instructiuni_LUX_P04_06_10_13.pdf",
+          "Foaie produs": "files/foaie_produs_Lux.pdf"
         }
       }
     },
@@ -108,9 +113,11 @@
             "Suprafata incalzita": "5 - 10 mp",
             "Inaltime de montaj": "1.8m - 3.0m"
           },
-          "Catalog": "",
-          "Instructiuni": "",
-          "Foaie produs": ""
+          "Garantie":"5",
+          "Catalog": "files/catalog_panouri_radiante.pdf",
+          "Instructiuni": "files/instructiuni_THERMOGLASS P04_06_10_13_22.pdf",
+          "Foaie produs": "files/foaie_produs_Thermoglass.pdf"
+
         },
         "Thermoglass P06": {
           "name":"Thermoglass P06",
@@ -125,9 +132,10 @@
             "Suprafata incalzita": "7 - 14mp",
             "Inaltime de montaj": "2.2m - 3.0m"
           },
-          "Catalog": "",
-          "Instructiuni": "",
-          "Foaie produs": ""
+          "Garantie":"5",
+          "Catalog": "files/catalog_panouri_radiante.pdf",
+          "Instructiuni": "files/instructiuni_THERMOGLASS P04_06_10_13_22.pdf",
+          "Foaie produs": "files/foaie_produs_Thermoglass.pdf"
         },
         "Thermoglass P08": {
           "name": "Thermoglass P08",
@@ -142,9 +150,10 @@
             "Suprafata incalzita": "8 - 18mp",
             "Inaltime de montaj": "2.3m - 3.5m"
           },
-          "Catalog": "",
-          "Instructiuni": "",
-          "Foaie produs": ""
+          "Garantie":"5",
+          "Catalog": "files/catalog_panouri_radiante.pdf",
+          "Instructiuni": "files/instructiuni_THERMOGLASS P04_06_10_13_22.pdf",
+          "Foaie produs": "files/foaie_produs_Thermoglass.pdf"
         },
         "Thermoglass P10": {
           "name":"Thermoglass P10",
@@ -159,9 +168,10 @@
             "Suprafata incalzita": "11 - 22mp",
             "Inaltime de montaj": "2.5m - 3.5m"
           },
-          "Catalog": "",
-          "Instructiuni": "",
-          "Foaie produs": ""
+          "Garantie":"5",
+          "Catalog": "files/catalog_panouri_radiante.pdf",
+          "Instructiuni": "files/instructiuni_THERMOGLASS P04_06_10_13_22.pdf",
+          "Foaie produs": "files/foaie_produs_Thermoglass.pdf"
         },
         "Thermoglass P13": {
           "name":"Thermoglass P13",
@@ -176,9 +186,10 @@
             "Suprafata incalzita": "14 - 28mp",
             "Inaltime de montaj": "2.7m - 4.0m"
           },
-          "Catalog": "",
-          "Instructiuni": "",
-          "Foaie produs": ""
+          "Garantie":"5",
+          "Catalog": "files/catalog_panouri_radiante.pdf",
+          "Instructiuni": "files/instructiuni_THERMOGLASS P04_06_10_13_22.pdf",
+          "Foaie produs": "files/foaie_produs_Thermoglass.pdf"
         },
         "Thermoglass P22": {
           "name":"Thermoglass P22",
@@ -193,9 +204,10 @@
             "Suprafata incalzita": "22 - 44mp",
             "Inaltime de montaj": "2.7m - 4.5m"
           },
-          "Catalog": "",
-          "Instructiuni": "",
-          "Foaie produs": ""
+          "Garantie":"5",
+          "Catalog": "files/catalog_panouri_radiante.pdf",
+          "Instructiuni": "files/instructiuni_THERMOGLASS P04_06_10_13_22.pdf",
+          "Foaie produs": "files/foaie_produs_Thermoglass.pdf"
         }
       }
     },
@@ -220,9 +232,10 @@
               "Model 4": ""
             }
           },
-          "Catalog": "",
-          "Instructiuni": "",
-          "Foaie produs": ""
+          "Garantie":"5",
+          "Catalog": "files/catalog_panouri_radiante.pdf",
+          "Instructiuni": "files/instructiuni_THERMOGLASS P04_06_10_13_22.pdf",
+          "Foaie produs": "files/foaie_produs_Thermoglass.pdf"
         },
         "Thermoglass PN09": {
           "name":"Thermoglass PN09",
@@ -237,8 +250,10 @@
             "Suprafata incalzita": "10 - 20mp",
             "Inaltime de montaj": "2.2m - 3.0m"
           },
-          "Catalog": "",
-          "Instructiuni": "",
+          "Garantie":"5",
+          "Catalog": "files/catalog_panouri_radiante.pdf",
+          "Instructiuni": "files/instructiuni_THERMOGLASS P04_06_10_13_22.pdf",
+          "Foaie produs": "files/foaie_produs_Thermoglass.pdf",
           "Personalizare": {
             "Model 1": "",
             "Model 2": "",
@@ -268,9 +283,10 @@
               "Model 6": ""
             }
           },
-          "Catalog": "",
-          "Instructiuni": "",
-          "Foaie produs": ""
+          "Garantie":"5",
+          "Catalog": "files/catalog_panouri_radiante.pdf",
+          "Instructiuni": "files/instructiuni_THERMOGLASS P04_06_10_13_22.pdf",
+          "Foaie produs": "files/foaie_produs_Thermoglass.pdf"
         }
       }
     },
@@ -293,7 +309,8 @@
             "Suprafata incalzita": "22 - 44mp",
             "Inaltime de montaj": "2.7m - 4.5m"
           },
-          "Instructiuni": ""
+          "Garantie":"5",
+          "Instructiuni": "files/instructiuni_THERMOGLASS_P22_25_30_40.pdf"
         },
         "Thermoglass PN25": {
           "name":"Thermoglass PN25",
@@ -308,7 +325,8 @@
             "Suprafata incalzita": "25 - 50mp",
             "Inaltime de montaj": "3.0m - 6.0m"
           },
-          "Instructiuni": ""
+          "Garantie":"5",
+          "Instructiuni": "files/instructiuni_THERMOGLASS_P22_25_30_40.pdf"
         },
         "Thermoglass PN30": {
           "name":"Thermoglass PN30",
@@ -323,7 +341,8 @@
             "Suprafata incalzita": "30 - 60mp",
             "Inaltime de montaj": "min. 3.5m"
           },
-          "Instructiuni": ""
+          "Garantie":"5",
+          "Instructiuni": "files/instructiuni_THERMOGLASS_P22_25_30_40.pdf"
         },
         "Thermoglass PN40": {
           "name":"Thermoglass PN40",
@@ -338,7 +357,8 @@
             "Suprafata incalzita": "40 - 80mp",
             "Inaltime de montaj": "min. 4.0m"
           },
-          "Instructiuni": ""
+          "Garantie":"5",
+          "Instructiuni": "files/instructiuni_THERMOGLASS_P22_25_30_40.pdf"
         },
         "PRO 20 anticoroziv": {
           "name":"PRO 20 anticoroziv",
@@ -353,7 +373,8 @@
             "Suprafata incalzita": "20 - 40mp",
             "Inaltime de montaj": "3.0m - 6.0m"
           },
-          "Instructiuni": ""
+          "Garantie":"5",
+          "Instructiuni": "files/instructiuni_PRO20.pdf"
         },
         "PRO 30 anticoroziv": {
           "name":"PRO 30 anticoroziv",
@@ -368,7 +389,8 @@
             "Suprafata incalzita": "30 - 60mp",
             "Inaltime de montaj": "min. 3.5m"
           },
-          "Instructiuni": ""
+          "Garantie":"5",
+          "Instructiuni": "instructiuni_PRO30_PRO40.pdf"
         },
         "PRO 40 anticoroziv": {
           "name":"PRO 40 anticoroziv",
@@ -383,7 +405,8 @@
             "Suprafata incalzita": "40 - 80mp",
             "Inaltime de montaj": "min. 4.0m"
           },
-          "Instructiuni": ""
+          "Garantie":"5",
+          "Instructiuni": "files/instructiuni_PRO30_PRO40.pdf"
         }
       }
     }
