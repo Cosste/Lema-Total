@@ -60,6 +60,10 @@ app.config(function($routeProvider){
         templateUrl: 'snippets/cerereDeOferta.html',
         controller:'cerereController'
         })
+        .when('/certificate',{
+            templateUrl:'snippets/certificate.html',
+            controller:'certificateController'
+        })
         .otherwise({redirectTo:'/'});
 });
 
@@ -97,7 +101,6 @@ app.controller('HomeCtrl', function ($scope, $rootScope) {
 });
 
 
-angular.module('MyApp', ['angular-carousel']);
 
 function insertHTML(selector, htmlToInsert){
     $(selector).append(htmlToInsert);
@@ -276,6 +279,43 @@ app.controller('termostatController', function($scope){
 });
 
 app.controller('iluminareController', function($scope){});
+
+app.controller('certificateController', function(){
+    var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('certificat1');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    /*img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }*/
+    function imgBig(id){
+        var img = document.getElementById(id);
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    }
+    imgBig("certificat1");
+    imgBig("certificat2");
+    imgBig("certificat3");
+    imgBig("certificat4");
+    imgBig("certificat5");
+    imgBig("certificat6");
+    imgBig("certificat7");
+
+// Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+});
 
 /*angular.module('website', ['ngAnimate'])
     .controller('MainCtrl', function ($scope) {
