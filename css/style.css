@@ -22,11 +22,48 @@
 .container{
     padding:0 25px;
 }
+@media(min-width: 768px) {
+    .navbar-nav > li > a {
+        line-height: 50px !important;
+    }
+    #thermostat-tile{
+        background: url(../images/Termostat/termostate.jpg) no-repeat;
+        background-size:cover;
+        background-position-x: -220px;
+        background-position-y: -20px;
+        cursor:pointer;
+    }
+}
+@media(max-height: 767px){
+    .navbar-header button{
+        top:15px;
+    }
+    .glyphicon-envelope{
+        top:3px;
+        margin-right: 5px;
+    }
+    .glyphicon-earphone{
+        top:3px;
+        margin-right: 5px;
+    }
+    #mainContent{
+        margin-top:0;
+    }
+    .clickableContacts{
+        background: #F6F8FA;
+        padding-top:7px;
+    }
+    #thermostat-tile{
+        background: url(../images/Termostat/termostat_model_q3_small.jpg) no-repeat;
+        background-size:cover;
+        cursor:pointer;
+    }
+}
 
 .navbarContact{
     margin-top:28px;
     margin-right:3px;
-    font-size:23px!important;
+    font-size:20px!important;
 }
 object.navbar-brand{
     position:relative;
@@ -50,16 +87,16 @@ object.navbar-brand{
 }*/
 
 #callBtn{
-    font-size: 1.5em;
+    font-size: 1.1em;
     display: block;
-    margin-top:75px;
+    margin-top:82px;
     padding: 10px;
     border: 2px solid #fff;
     background-color: #5bc0de;
     color: #951c49;
 }
 #emailBtn{
-    font-size: 1.5em;
+    font-size: 1.1em;
     display: block;
     margin: 5px 0 0 0;
     padding: 10px;
@@ -69,28 +106,21 @@ object.navbar-brand{
 }
 
 
-/* SWIPER START */
-.swiper-container img {
-    width:120%;
-    height:auto;
+.carousel{
+    border-radius: 10px;
+}
+#myCarousel{
+    margin-top:5vh;
+    margin-bottom: 3vh;
+    border-radius: 10px;
+}
+#myCarousel img{
+    border-radius:10px;
 }
 
-.swiper-wrapper {
-    height:auto !important;
-}
 
-.swiper-slide {
-    height:auto !important;
-}
-.swiper-slide img{
-    border-radius:15px;
-}
-.swiper-slide-next{
-    opacity: 0.99;
-}
-.swiper-slide-prev{
-    opacity:0.99;
-}
+
+
 
 #largeImgPanel {
     text-align: center;
@@ -111,12 +141,14 @@ object.navbar-brand{
     position:static;
     height: 50%;
     width:100%;
-    background: #373A39;
+    background: #eee;
     color:#FFFFFF;
 }
 
 /* END SWIPER */
-
+#products{
+    background: #373A39;
+}
 
 #contact{
     background: #FFF;
@@ -125,11 +157,18 @@ object.navbar-brand{
 #about p{
     margin-top:20px;
     text-align: justify;
+    font-size:14px;
+}
+
+#about{
+    color: rgb(51,51,51);
+    padding:0;
 }
 
 .jumbotron{
     margin-bottom: 0;
 }
+
 
 #panels-tile, #sheets-tile, #lighting-tile, #thermostat-tile{
     height: 250px;
@@ -163,13 +202,7 @@ object.navbar-brand{
     background-position: center;
     cursor:pointer;
 }
-#thermostat-tile{
-    background: url(../images/Termostat/termostate.jpg) no-repeat;
-    background-size:cover;
-    background-position-x: -220px;
-    background-position-y: -20px;
-    cursor:pointer;
-}
+
 
 #panels-tile span, #sheets-tile span, #lighting-tile span, #thermostat-tile span{
     position:absolute;
@@ -191,6 +224,9 @@ object.navbar-brand{
     background: #373A39;
     border: none;
 }
+.panel-footer p{
+    text-align: center !important;
+}
 #phoneNumber {
     /* Adresa numar de tele: */
     font-family: OpenSans;
@@ -210,13 +246,7 @@ object.navbar-brand{
     color: #A8A8A8;
     line-height: 32px;
 }
-#facebook {
-    /* FACEBOOK: */
-    font-family: Montserrat-Light;
-    font-size: 12px;
-    color: #FFFFFF;
-    letter-spacing: 4px;
-}
+
 #firstFooter{
     border-top: 1px solid black;
 }

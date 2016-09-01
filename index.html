@@ -8,19 +8,16 @@
     <meta name="description" content="Panouri radiante" />
     <meta name="keywords" content="panouri radiante, sisteme incalzire, sisteme de incalzire" />
     <meta name="author" content="Stefan-Cosmin Romanescu" />
-    <link href="https://example.com/" rel="canonical" />
+    <link href="https://panouri-radiante.eu" rel="canonical" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/angular-carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
-    <script src="js/angular-touch.js"></script>
-    <script src="js/angular-carousel.js"></script>
 
 
 <body>
@@ -28,7 +25,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -37,26 +34,27 @@
             <object type="image/svg+xml" data="images/Logo Lema Total Impex.svg" class="navbar-brand"></object>
         </div>
         <ul class="nav navbar-nav navbar-left hidden-sm hidden-xs">
-            <li class="navbarContact"><span class="glyphicon glyphicon-inbox"><span>office@sistemeincalzire.com.ro</span></span></li>
-            <li class="navbarContact"><span class="glyphicon glyphicon-earphone"><span>0723570968</span></span></li>
+            <li class="navbarContact"><div>Mail: office@sistemeincalzire.com.ro |</div></li>
+            <li class="navbarContact"><div>Tel: 0723570968</div></li>
         </ul>
         <div class="collapse navbar-collapse" id="collapsable-nav">
             <ul class="nav navbar-nav navbar-right" id="nav-list">
                 <li><a href="#/acasa">Acasa</a></li>
                 <li><a href="#/produse">Produse</a></li>
                 <li><a href="#/contact">Contact</a></li>
+                <li><a href="#/oferta">Cerere de oferta</a></li>
             </ul>
         </div>
     </div><!-- /.container-fluid -->
 </nav>
 <!-- end navbar -->
-<div class="visible-sm visible-xs">
+
+<div class="visible-sm visible-xs clickableContacts">
     <a class="btn" id="callBtn" href="tel:0723570968">
         <span class="glyphicon glyphicon-earphone"></span> 0723570968
     </a>
-    <a class="btn" id="emailBtn" href="mailto:office@sistemeincalzire.com.ro"><span class="glyphicon glyphicon-envelope">office@sistemeincalzire.com.ro</span></a>
+    <a class="btn" id="emailBtn" href="mailto:office@sistemeincalzire.com.ro"><span class="glyphicon glyphicon-envelope"></span><span>office@sistemeincalzire.com.ro</span></a>
 </div>
-
 
 
 <div ng-view id="mainContent"></div>
@@ -67,22 +65,19 @@
 <footer class="panel-footer" id="firstFooter">
     <div class="container">
         <div class="row">
-            <section id="info" class="center-block col-xs-8 col-md-4">
+            <section id="info">
                 <section id="brand">
-                    <object type="image/svg+xml" data="images/Logo Lema Total Impex.svg"></object>
+                    <object class="center-block" type="image/svg+xml" data="images/Logo Lema Total Impex.svg"></object>
                 </section>
-                <section id="facebook">
-                    Facebook
-                </section>
-                <section id="adress">
+                <p id="adress">
                     Adresa: Str. Vitejilor, nr. 6, sc. 11, tr. II, Iasi
-                </section>
-                <section id="phoneNumber">
+                </p>
+                <p id="phoneNumber">
                     Numar telefon: 0723570968
-                </section>
-                <section id="mail">
+                </p>
+                <p id="mail">
                     Email: office@sistemeincalzire.com.ro
-                </section>
+                </p>
             </section>
         </div>
     </div>
@@ -90,7 +85,7 @@
 <footer class="panel-footer" id="secondFooter">
     <div class="container">
         <div class="row">
-            <h6 class="center-block col-xs-3">All rights reserved &copy Lema Total</h6>
+            <h6 class="text-center">All rights reserved &copy Lema Total</h6>
         </div>
     </div>
 </footer> <!-- END OF FOOTER -->
@@ -100,11 +95,13 @@
 
 <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+
 
 <script src="js/script.js"></script>
 </body>

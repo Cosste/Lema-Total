@@ -1,45 +1,33 @@
-<div ng-controller="HomeCtrl">
-    <div class="container-fluid" id="carousel">
-        <!-- Page Content -->
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="images/potolok3_1920x1200.jpg" alt="Panouri radiante"></div>
-                <div class="swiper-slide"><img src="images/RomanticHome_9009_1920x1200.jpg" alt="Panouri radiante"></div>
-                <div class="swiper-slide"><img src="images/боковая%20стена_1920x1200.jpg" alt="Panouri radiante"></div>
+<div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/potolok3_1920x1200.jpg" alt="Chania">
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="item">
+                <img src="images/RomanticHome_9009_1920x1200.jpg" alt="Chania">
+            </div>
 
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <div class="item">
+                <img src="images/боковая%20стена_1920x1200.jpg" alt="Flower">
+            </div>
+
         </div>
+
     </div>
 </div>
 
+<a href="mailTo:stefan30121995@yahoo.com">Hello</a>
 
-    <ul rn-carousel class="image">
-        <li ng-repeat="image in sportImages">
-            <div class="layer"><img src="images/potolok3_1920x1200.jpg"/></div>
-        </li>
-    </ul>
-    <div rn-carousel-indicators ng-if="slides" slides="slides" rn-carousel-index="carouselIndex"></div>
-
-
-
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <h2 class="col-xs-12 col-md-4">Despre noi</h2>
-            <p class="col-xs-12 col-md-8">Credem cu tărie în viitorul tehnologiilor verzi, nepoluante. Din acest motiv LEMA TOTAL IMPEX, înființată în 2008, a ales să meargă pe drumul promovării active a sistemelor de încălzire cu panouri radiante cu infraroșu. Principala noastră preocupare este de a răspunde exigențelor crescânde ale clienților noștri, oferind în acest sens produse certificate de CEA MAI BUNA CALITATE, ORIGINALE, SOLUȚII OPTIME și PREȚURI adaptate realităților românești. În acest sens amintim doar panourile THERMOGLASS – cea mai nouă generație de panouri radiante din sticlă, fabricate cu ajutorul nanotehnologiei, panouri care sunt TRANSPARENTE – UNICE ÎN ROMÂNIA. Am ales întotdeauna o INFORMARE CORECTĂ a clienților în dauna vânzărilor „DISPERATE” practicate de unii furnizori de astfel de produse. Experiența, pasiunea, seriozitatea și cunoștințele noastre cumulate cu profesionalismul colaboratorilor noștri pe linie de proiectare și relațiile excelente de colaborare cu partenerii noștri reprezintă garanția că oferim soluții și servicii la cele mai înalte standarde. Politica de preţuri practicată cu succes de LEMA TOTAL IMPEX, materializată prin preţuri competitive și atractive, promptitudine în servirea şi rezolvarea problemelor clienţilor așigură premisele stabilirii unor relaţii de colaborare de lungă durată în condiţii reciproc avantajoase.</p>
-        </div>
-    </div>
-</div>
 
 <!-- PRODUCTS -->
 <div id="products" class="jumbotron">
@@ -60,6 +48,17 @@
         </div>
     </div>
 </div> <!-- END OF PRODUCS -->
+
+<div class="jumbotron" id="about">
+    <div class="container">
+        <div class="row">
+            <h2 class="col-xs-12 col-md-4">Despre noi</h2>
+            <p class="col-xs-12 col-md-8">Credem cu tărie în viitorul tehnologiilor verzi, nepoluante. Din acest motiv LEMA TOTAL IMPEX, înființată în 2008, a ales să meargă pe drumul promovării active a sistemelor de încălzire cu panouri radiante cu infraroșu. Principala noastră preocupare este de a răspunde exigențelor crescânde ale clienților noștri, oferind în acest sens produse certificate de CEA MAI BUNA CALITATE, ORIGINALE, SOLUȚII OPTIME și PREȚURI adaptate realităților românești. În acest sens amintim doar panourile THERMOGLASS – cea mai nouă generație de panouri radiante din sticlă, fabricate cu ajutorul nanotehnologiei, panouri care sunt TRANSPARENTE – UNICE ÎN ROMÂNIA. Am ales întotdeauna o INFORMARE CORECTĂ a clienților în dauna vânzărilor „DISPERATE” practicate de unii furnizori de astfel de produse. Experiența, pasiunea, seriozitatea și cunoștințele noastre cumulate cu profesionalismul colaboratorilor noștri pe linie de proiectare și relațiile excelente de colaborare cu partenerii noștri reprezintă garanția că oferim soluții și servicii la cele mai înalte standarde. Politica de preţuri practicată cu succes de LEMA TOTAL IMPEX, materializată prin preţuri competitive și atractive, promptitudine în servirea şi rezolvarea problemelor clienţilor așigură premisele stabilirii unor relaţii de colaborare de lungă durată în condiţii reciproc avantajoase.</p>
+        </div>
+    </div>
+</div>
+
+
 
 <div id="contact" class="jumbotron">
     <div class="container">

@@ -56,6 +56,10 @@ app.config(function($routeProvider){
             templateUrl:'snippets/iluminareUrgenta-snippet.html',
             controller: 'iluminareController'
         })
+        .when('/oferta', {
+        templateUrl: 'snippets/cerereDeOferta.html',
+        controller:'cerereController'
+        })
         .otherwise({redirectTo:'/'});
 });
 
@@ -109,23 +113,16 @@ function insertProperty (string, propName, propValue) {
 }
 
 app.controller('HomeController', function($scope){
-    /*var mySwiper = new Swiper ('.swiper-container', {
-        observer:true,
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        effect:'coverflow',
-        slidesPerView: 2,
-        centeredSlides: true,
-        grabCursor: true,
-        hashnav:true,
-        // If we need pagination
-        pagination: '.swiper-pagination',
-
-        // Navigation arrows
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev'
-    });*/
+    $(document).ready(function() {
+        $('.carousel').carousel({
+            interval: 4000
+        });
+    });
+    $("#navbarToggle").blur(function(event){
+        if(window.innerWidth < 768){
+            $("#collapsable-nav").collapse('hide');
+        }
+    });
 });
 
 app.controller('ProductsController', function($scope){
@@ -206,7 +203,12 @@ app.controller('productsSubcategoryController', function($scope){
             var productsViewHtml =
                 buildProductsSubcategoriesHtml(products, productsHtml);
             insertHTML("#mainContent", productsViewHtml)
-        });
+        })
+            .done(function(){
+                if(lema.shortName == "I"){
+                    $(".noLux").remove();
+                }
+            });
     }
 
     function buildProductsSubcategoriesHtml(product, productsHtml){
@@ -323,11 +325,7 @@ app.controller('iluminareController', function($scope){});
 $(document).ready(function () {
 
 
-    $("#navbarToggle").blur(function(event){
-        if(window.innerWidth < 768){
-            $("#collapsable-nav").collapse('hide');
-        }
-    });
+
     /*
     function insertHTML(selector, htmlToInsert){
         $(selector).html(htmlToInsert);
