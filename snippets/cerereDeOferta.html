@@ -6,161 +6,157 @@
 <div class="container">
     <div class="row">
         <h1 id="mainTitle" class="text-center">Dimensionare sistem de incalzire in cazul in care nu exista un proiect tehnic</h1>
-        <form action="https://formspree.io/stefan30121995@yahoo.com" method="POST">
-            <div class="form-group">
-                <label for="InputName">Persoana de contact</label>
-                <input type="text" class="form-control" id="InputName" placeholder="Nume si prenume" required name="Nume si prenume ">
-            </div>
-            <div class="form-group">
-                <label for="Localitate">Localitate</label>
-                <input type="text" class="form-control" id="Localitate" placeholder="Localitate" required name="Localitatea">
-            </div>
-            <div class="form-group">
-                <label for="InputEmail">Email</label>
-                <input type="email" class="form-control" id="InputEmail" placeholder="Email" required name="_replyto">
-            </div>
-            <div class="form-group">
-                <label for="InputPhone">Telefon</label>
-                <input type="tel" class="form-control" id="InputPhone" required name="Telefon" placeholder="Telefon">
-            </div>
-            <div class="radio">
-                <h5>Sistem de incalzire ales</h5>
-                <label>
-                    <input type="radio" name="Sistem Incalzire" value="panouri radiante" id="optionsRadioPanouri" checked>panouri radiante
-                </label>
-                <label>
-                    <input type="radio" name="Sistem Incalzire" value="folie radianta" id="optionsRadioFolie">folie radianta
-                </label>
-            </div>
-            <div>
-                <h5>Destinatie cladire</h5>
-                <select class="form-control" name="Destinatie cladire">
-                    <option value="Selecteaza">Selecteaza</option>
-                    <option value="Rezidential">Rezidential</option>
-                    <option value="Birou">Birou</option>
-                    <option value="Spatiu comercial">Spatiu comercial</option>
-                    <option value="Industrial">Industrial</option>
-                    <option value="Altele">Altele</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="InputTipCladire">Tip cladire</label>
-                <input type="text" class="form-control" id="InputTipCladire" name="Tip cladire" placeholder="Ex: P, P+E, S+P+E, P+E+M">
-            </div>
-            <div class="form-group">
-                <label for="InputNumarCamere">Tip cladire</label>
-                <input type="number" class="form-control" id="InputNumarCamere" placeholder="1,2,3...">
-            </div>
-            <div class="form-group">
-                <h5>*Suprafata cladire (camera):</h5>
-                <label for="InputLungime">Lungime:</label>
-                <input type="text" class="form-control" id="InputLungime" placeholder="">
-                <label for="InputLatime">Latime:</label>
-                <input type="text" class="form-control" id="InputLatime" placeholder="">
-                <label for="InputInaltime">Inaltime:</label>
-                <input type="text" class="form-control" id="InputInaltime" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="InputLungimeXInaltime">Dimensiuni camere(Lungime X Latime)</label>
-                <input type="text" class="form-control" id="InputLungimeXInaltime" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="InputGeamuri">Suprafata geamuri (mp)</label>
-                <input type="text" class="form-control" id="InputGeamuri" placeholder="">
-            </div>
-            <div>
-                <h5>Tip geamuri</h5>
-                <select class="form-control">
-                    <option value="Selecteaza">Selecteaza</option>
-                    <option value="Geam simplu">Geam simplu</option>
-                    <option value="Geam dublu">Geam dublu</option>
-                    <option value="Geam triplu">Geam triplu</option>
-                    <option value="Geam termopan, 2 foi de sticla fara LOWE sau gaz inert">Geam termopan, 2 foi de sticla fara LOWE sau gaz inert</option>
-                    <option value="Geam termopan, 2 foi de sticla cu LOWE sau gaz inert">Geam termopan, 2 foi de sticla cu LOWE sau gaz inert</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="InputUsa">Suprafata usa spre exterior (mp)</label>
-                <input type="text" class="form-control" id="InputUsa" placeholder="">
-            </div>
-            <div>
-                <h5>Tip usa exterioara</h5>
-                <select class="form-control">
-                    <option value="Selecteaza">Selecteaza</option>
-                    <option value="Simpla din lemn">Simpla din lemn</option>
-                    <option value="Simpla din lemn cu geam">Simpla din lemn cu geam</option>
-                    <option value="Dubla din lemn">Dubla din lemn</option>
-                    <option value="Dubla din lemn cu geam">Dubla din lemn cu geam</option>
-                    <option value="Metal">Metal</option>
-                    <option value="Termopan">Termopan</option>
-                    <option value="Panouri sandwich">Panouri sandwich</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <h5>Pereti exteriori:</h5>
-                <label for="InputPeretiMaterial">Material</label>
-                <input type="text" class="form-control" id="InputPeretiMaterial" placeholder="">
-                <label for="InputPeretiGrosime">Grosime (mm)</label>
-                <input type="text" class="form-control" id="InputPeretiGrosime" placeholder="">
-            </div>
-            <div class="form-group">
-                <h5>Izolatie pereti exteriori</h5>
-                <label for="InputPeretiIzolatieMaterial">Material</label>
-                <input type="text" class="form-control" id="InputPeretiIzolatieMaterial" placeholder="">
-                <label for="InputPeretiIzolatieGrosime">Grosime (mm)</label>
-                <input type="text" class="form-control" id="InputPeretiIzolatieGrosime" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="InputNumarPereti">Numar pereti exteriori</label>
-                <input type="number" class="form-control" id="InputNumarPereti" placeholder="">
-            </div>
-            Tavan
+        <div class="col-md-5 center-block">
+            <form action="https://formspree.io/stefan30121995@yahoo.com" method="POST">
+                <div class="form-group">
+                    <label for="InputName">*Persoana de contact</label>
+                    <input type="text" class="form-control" id="InputName" placeholder="Nume si prenume" required name="Nume si prenume ">
+                </div>
+                <div class="form-group">
+                    <label for="Localitate">*Localitate</label>
+                    <input type="text" class="form-control" id="Localitate" placeholder="Localitate" required name="Localitatea">
+                </div>
+                <div class="form-group">
+                    <label for="InputEmail">*Email</label>
+                    <input type="email" class="form-control" id="InputEmail" placeholder="Email" required name="_replyto">
+                </div>
+                <div class="form-group">
+                    <label for="InputPhone">*Telefon</label>
+                    <input type="tel" class="form-control" id="InputPhone" required name="Telefon" placeholder="Telefon">
+                </div>
+                <div class="radio">
+                    <h5>Sistem de incalzire ales</h5>
+                    <label>
+                        <input type="radio" name="Sistem Incalzire" value="panouri radiante" id="optionsRadioPanouri" checked>panouri radiante
+                    </label>
+                    <label>
+                        <input type="radio" name="Sistem Incalzire" value="folie radianta" id="optionsRadioFolie">folie radianta
+                    </label>
+                </div>
+                <div>
+                    <h5>Destinatie cladire</h5>
+                    <select class="form-control" name="Destinatie cladire">
+                        <option disabled selected value>Selecteaza</option>
+                        <option value="Rezidential">Rezidential</option>
+                        <option value="Birou">Birou</option>
+                        <option value="Spatiu comercial">Spatiu comercial</option>
+                        <option value="Industrial">Industrial</option>
+                        <option value="Altele">Altele</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="InputTipCladire">Tip cladire</label>
+                    <input type="text" class="form-control" id="InputTipCladire" name="Tip cladire" placeholder="Ex: P, P+E, S+P+E, P+E+M">
+                </div>
+                <div class="form-group">
+                    <label for="InputNumarCamere">Numar Camere</label>
+                    <input type="number" class="form-control" id="InputNumarCamere" placeholder="1,2,3..." name="Numar camere">
+                </div>
+                <div class="form-group">
+                    <label for="InputLungimeLatimeInaltime">*Suprafata cladire (camera) (Lungime x Latime x Inaltime):</label>
+                    <input type="text" class="form-control" id="InputLungimeLatimeInaltime" placeholder="Lungime x Latime x Inaltime" required name="Suprafata cladire (camera) (Lungime x Latime x Inaltime)">
+                </div>
+                <div class="form-group">
+                    <label for="InputLungimeXInaltime">Dimensiuni camere(Lungime X Latime)</label>
+                    <input type="text" class="form-control" id="InputLungimeXInaltime" placeholder="Lungime x Latime" name="Dimensiuni camere(Lungime X Latime)">
+                </div>
+                <div class="form-group">
+                    <label for="InputGeamuri">Suprafata geamuri (mp)</label>
+                    <input type="number" class="form-control" id="InputGeamuri" placeholder="" name="Suprafata geamuri">
+                </div>
+                <div>
+                    <h5>Tip geamuri</h5>
+                    <select class="form-control" name="Tip geamuri">
+                        <option disabled selected value>Selecteaza</option>
+                        <option value="Geam simplu">Geam simplu</option>
+                        <option value="Geam dublu">Geam dublu</option>
+                        <option value="Geam triplu">Geam triplu</option>
+                        <option value="Geam termopan, 2 foi de sticla fara LOWE sau gaz inert">Geam termopan, 2 foi de sticla fara LOWE sau gaz inert</option>
+                        <option value="Geam termopan, 2 foi de sticla cu LOWE sau gaz inert">Geam termopan, 2 foi de sticla cu LOWE sau gaz inert</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="InputUsa">Suprafata usa spre exterior (mp)</label>
+                    <input type="number" class="form-control" id="InputUsa" placeholder="" name="Suprafata usa spre exterior (mp)">
+                </div>
+                <div>
+                    <h5>Tip usa exterioara</h5>
+                    <select class="form-control" name="Tip usa exterioara">
+                        <option disabled selected value>Selecteaza</option>
+                        <option value="Simpla din lemn">Simpla din lemn</option>
+                        <option value="Simpla din lemn cu geam">Simpla din lemn cu geam</option>
+                        <option value="Dubla din lemn">Dubla din lemn</option>
+                        <option value="Dubla din lemn cu geam">Dubla din lemn cu geam</option>
+                        <option value="Metal">Metal</option>
+                        <option value="Termopan">Termopan</option>
+                        <option value="Panouri sandwich">Panouri sandwich</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h5>Pereti exteriori:</h5>
+                    <label for="InputPeretiMaterial">Material</label>
+                    <input type="text" class="form-control" id="InputPeretiMaterial" placeholder="" name="Pereti exteriori - material">
+                    <label for="InputPeretiGrosime">Grosime (mm)</label>
+                    <input type="number" class="form-control" id="InputPeretiGrosime" placeholder="" name="Pereti exteriori - grosime(mm)">
+                </div>
+                <div class="form-group">
+                    <h5>Izolatie pereti exteriori</h5>
+                    <label for="InputPeretiIzolatieMaterial">Material</label>
+                    <input type="text" class="form-control" id="InputPeretiIzolatieMaterial" placeholder="" name="Izolatie pereti exteriori - material">
+                    <label for="InputPeretiIzolatieGrosime">Grosime (mm)</label>
+                    <input type="number" class="form-control" id="InputPeretiIzolatieGrosime" placeholder="" name="Izolatie pereti exteriori - grosime(mm)">
+                </div>
+                <div class="form-group">
+                    <label for="InputNumarPereti">Numar pereti exteriori</label>
+                    <input type="number" class="form-control" id="InputNumarPereti" placeholder="" name="Numar pereti exteriori">
+                </div>
+                <div class="form-group">
+                    <h5>Tavan:</h5>
+                    <label for="InputTavanMaterial">Material</label>
+                    <input type="text" class="form-control" id="InputTavanMaterial" placeholder="" name="Tavan - material">
+                    <label for="InputTavanGrosime">Grosime (mm)</label>
+                    <input type="number" class="form-control" id="InputTavanGrosime" placeholder="" name="Tavan - grosime(mm)">
+                </div>
+                <div class="form-group">
+                    <h5>Izolatie Tavan:</h5>
+                    <label for="InputIzolatieTavanMaterial">Material</label>
+                    <input type="text" class="form-control" id="InputIzolatieTavanMaterial" placeholder="" name="Izolatie tavan - material">
+                    <label for="InputIzolatieTavanGrosime">Grosime (mm)</label>
+                    <input type="number" class="form-control" id="InputIzolatieTavanGrosime" placeholder="" name="Izolatie tavan - grosime(mm)">
+                </div>
+                <div class="form-group">
+                    <h5>Podea:</h5>
+                    <label for="InputPodeaMaterial">Material</label>
+                    <input type="text" class="form-control" id="InputPodeaMaterial" placeholder="" name="Podea - material">
+                    <label for="InputPodeaGrosime">Grosime (mm)</label>
+                    <input type="number" class="form-control" id="InputPodeaGrosime" placeholder="" name="Podea - grosime(mm)">
+                </div>
+                <div class="form-group">
+                    <h5>Izolatie Podea:</h5>
+                    <label for="InputIzolatiePodeaMaterial">Material</label>
+                    <input type="text" class="form-control" id="InputIzolatiePodeaMaterial" placeholder="" name="Izolatie podea - material">
+                    <label for="InputIzolatiePodeaGrosime">Grosime (mm)</label>
+                    <input type="number" class="form-control" id="InputIzolatiePodeaGrosime" placeholder="" name="Izolatie podea - grosime(mm)">
+                </div>
+                <div class="form-group">
+                    <label for="InputTemperatura">Temperatura de confort dorita (°C)</label>
+                    <input type="number" class="form-control" id="InputTemperatura" placeholder="°C" name="Temperatura de confort dorita">
+                </div>
+                <div>
+                    <h5>Destinatie cladire</h5>
+                    <select class="form-control" name="Destinatie cladire">
+                        <option disabled selected value>Selecteaza</option>
+                        <option value="monofazata (220v)">Monofazata (220v)</option>
+                        <option value="trifazata (380v)">Trifazata (380v)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="InputPutere">Putere instalata (din contractul cu furnizorul de energie) (kW)</label>
+                    <input type="number" class="form-control" id="InputPutere" placeholder="kW" name="Putere instalata (kW)">
+                </div>
+                <input type="submit" class="btn btn-default" value="Send">
 
-            <div class="form-group">
-                <h5>Tavan:</h5>
-                <label for="InputTavanMaterial">Material</label>
-                <input type="text" class="form-control" id="InputTavanMaterial" placeholder="">
-                <label for="InputTavanGrosime">Grosime (mm)</label>
-                <input type="text" class="form-control" id="InputTavanGrosime" placeholder="">
-            </div>
-            <div class="form-group">
-                <h5>Izolatie Tavan:</h5>
-                <label for="InputIzolatieTavanMaterial">Material</label>
-                <input type="text" class="form-control" id="InputIzolatieTavanMaterial" placeholder="">
-                <label for="InputIzolatieTavanGrosime">Grosime (mm)</label>
-                <input type="text" class="form-control" id="InputIzolatieTavanGrosime" placeholder="">
-            </div>
-            <div class="form-group">
-                <h5>Podea:</h5>
-                <label for="InputPodeaMaterial">Material</label>
-                <input type="text" class="form-control" id="InputPodeaMaterial" placeholder="">
-                <label for="InputPodeaGrosime">Grosime (mm)</label>
-                <input type="text" class="form-control" id="InputPodeaGrosime" placeholder="">
-            </div>
-            <div class="form-group">
-                <h5>Izolatie Podea:</h5>
-                <label for="InputIzolatiePodeaMaterial">Material</label>
-                <input type="text" class="form-control" id="InputIzolatiePodeaMaterial" placeholder="">
-                <label for="InputIzolatiePodeaGrosime">Grosime (mm)</label>
-                <input type="text" class="form-control" id="InputIzolatiePodeaGrosime" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="InputTemperatura">Temperatura de confort dorita (°C)</label>
-                <input type="number" class="form-control" id="InputTemperatura" placeholder="°C">
-            </div>
-            <div>
-                <h5>Destinatie cladire</h5>
-                <select class="form-control">
-                    <option value="Selecteaza">Selecteaza</option>
-                    <option value="monofazata (220v)">Monofazata (220v)</option>
-                    <option value="trifazata (380v)">Trifazata (380v)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="InputPutere">Putere instalata (din contractul cu furnizorul de energie) (kW)</label>
-                <input type="number" class="form-control" id="InputPutere" placeholder="kW">
-            </div>
-            <input type="submit" class="btn btn-default" value="Send">
-        </form>
+            </form>
+        </div>
     </div>
 </div>

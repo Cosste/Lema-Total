@@ -280,6 +280,34 @@ app.controller('termostatController', function($scope){
 
 app.controller('iluminareController', function($scope){
     $("html, body").animate({ scrollTop: $('#Title').offset().top }, 1);
+    var modal = document.getElementById('myModal2');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+    var modalImg = document.getElementById("img02");
+    var captionText = document.getElementById("caption");
+    function imgBig(id){
+        var img = document.getElementById(id);
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    }
+    imgBig("turn1");
+    imgBig("turn2");
+    imgBig("turn3");
+    imgBig("turn4");
+    imgBig("turn5");
+    imgBig("turn6");
+    imgBig("turn7");
+
+// Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
 });
 
 app.controller('certificateController', function(){
