@@ -64,9 +64,6 @@ app.config(function($routeProvider){
             templateUrl:'snippets/certificate.html',
             controller:'certificateController'
         })
-        .when('/googleb00c2f143f19e0d9.html',{
-            templateUrl:'googleb00c2f143f19e0d9.html'
-        })
         .otherwise({redirectTo:'/'});
 });
 
