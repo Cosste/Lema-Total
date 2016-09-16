@@ -362,3 +362,22 @@ img.navbar-brand{
     padding: 10px 5px;
 }
 
+.showMore{
+    cursor: pointer;
+}
+
+.showContent{
+    overflow: auto;
+    height: auto;
+}
+.hideContent{
+    overflow: hidden;
+    height: 0;
+}
+
+.transition{
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}

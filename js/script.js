@@ -1,8 +1,8 @@
 /**
  * Created by stefanromanescu on 22/08/16.
  */
-var app=angular.module('myApp', ['ngRoute']);
-app.config(function($routeProvider){
+var app=angular.module('myApp', ['ngRoute', 'ngAnimate']);
+app.config(function($routeProvider, $locationProvider){
     $routeProvider
         .when('/',{
             templateUrl:'snippets/home-snippet.html',
@@ -65,6 +65,8 @@ app.config(function($routeProvider){
             controller:'certificateController'
         })
         .otherwise({redirectTo:'/'});
+
+    $locationProvider.html5Mode(true);
 });
 
 app.controller('homeController',function($scope){
@@ -392,9 +394,41 @@ app.controller('certificateController', function(){
     });
 
 */
+/*
+app.controller('Dropdown1', ['$scope',function($scope){
+    console.log($(".content"));
+    $scope.dropdownClass='hideContent';
+    $scope.showHide = function(){
+        if ($(".content").hasClass("hideContent")){
+            $scope.dropdownClass = 'showContent';
+            $(".glyphicon").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+        }
+        else{
+            $scope.dropdownClass = 'hideContent';
+            $(".glyphicon").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+        }
+    }
+}]);
+
+app.controller('Dropdown2', ['$scope',function($scope){
+    console.log($(".content"));
+    $scope.dropdownClass='hideContent';
+    $scope.showHide = function(){
+        if ($(".content").hasClass("hideContent")){
+            $scope.dropdownClass = 'showContent';
+            $(".glyphicon").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+        }
+        else{
+            $scope.dropdownClass = 'hideContent';
+            $(".glyphicon").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+        }
+    }
+}]);
+*/
+
+
 
 $(document).ready(function () {
-
 
 
     /*
