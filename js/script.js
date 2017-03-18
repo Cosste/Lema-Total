@@ -1,8 +1,8 @@
 /**
  * Created by stefanromanescu on 22/08/16.
  */
-var app=angular.module('myApp', ['ngRoute', 'ngAnimate']);
-app.config(function($routeProvider, $locationProvider){
+var app=angular.module('myApp', ['ngRoute', 'ngAnimate'])
+    .config(function($routeProvider, $httpProvider, $locationProvider){
     $routeProvider
         .when('/',{
             templateUrl:'snippets/home-snippet.html',
@@ -25,8 +25,8 @@ app.config(function($routeProvider, $locationProvider){
             controller: 'ProductsController'
         })
         .when('/panouriRadiante/P',{
-        templateUrl:'snippets/products-category-title-snippet.html',
-        controller: 'productsSubcategoryController'
+            templateUrl:'snippets/products-category-title-snippet.html',
+            controller: 'productsSubcategoryController'
         })
         .when('/panouriRadiante/PN',{
             templateUrl:'snippets/products-category-title-snippet.html',
@@ -57,8 +57,8 @@ app.config(function($routeProvider, $locationProvider){
             controller: 'iluminareController'
         })
         .when('/oferta', {
-        templateUrl: 'snippets/cerereDeOferta.html',
-        controller:'cerereController'
+            templateUrl: 'snippets/cerereDeOferta.html',
+            controller:'cerereController'
         })
         .when('/certificate',{
             templateUrl:'snippets/certificate.html',
@@ -66,10 +66,11 @@ app.config(function($routeProvider, $locationProvider){
         })
         .otherwise({redirectTo:'/'});
 
-    $locationProvider.html5Mode(true);
+        $locationProvider.hashPrefix('!');
+        $locationProvider.html5Mode(true);
 });
 
-app.controller('homeController',function($scope){
+app.controller('homeController',function($scope, $locationProvider){
     //$("html, body").animate({ scrollTop: $('#carousel').offset().top }, 500);
 });
 app.controller('produseController',function($scope){
@@ -117,7 +118,7 @@ function insertProperty (string, propName, propValue) {
     return string.replace(new RegExp("{{" + propName + "}}", "g"), propValue);
 }
 
-app.controller('HomeController', function($scope){
+app.controller('HomeController', function($scope, $locationProvider){
     $(document).ready(function() {
         $('.carousel').carousel({
             interval: 4000
@@ -157,12 +158,12 @@ app.controller('ProductsController', function($scope){
     };
 
     function buildAndShowProductsHTML(products){
-            //Retrive single product snippet
-            $.get(productsHtml, function(productsHtml){
-                var productsViewHtml =
-                    buildProductsViewHtml(products, productsHtml);
-                insertHTML("#links", productsViewHtml);
-            });
+        //Retrive single product snippet
+        $.get(productsHtml, function(productsHtml){
+            var productsViewHtml =
+                buildProductsViewHtml(products, productsHtml);
+            insertHTML("#links", productsViewHtml);
+        });
     }
 
     function buildProductsViewHtml(product, productsHtml){
@@ -186,7 +187,7 @@ app.controller('ProductsController', function($scope){
     }
     lema.loadProductsCategories();
     $.get("snippets/products-details.html",function(data){
-       $("#mainContent").append(data);
+        $("#mainContent").append(data);
     });
 });
 
@@ -256,11 +257,11 @@ app.controller('termostatController', function($scope){
         $.get("termostat.json", buildAndShowThermostatCategoriesHtml);
     };
     function buildAndShowThermostatCategoriesHtml(thermostatJSON){
-            $.get("snippets/termostat-snippet.html", function(thermostatHtml){
-                var thermostatViewHtml=
-                    buildThermostatCategoriesHtml(thermostatJSON, thermostatHtml);
-                insertHTML("#mainContent", thermostatViewHtml);
-            });
+        $.get("snippets/termostat-snippet.html", function(thermostatHtml){
+            var thermostatViewHtml=
+                buildThermostatCategoriesHtml(thermostatJSON, thermostatHtml);
+            insertHTML("#mainContent", thermostatViewHtml);
+        });
     }
 
     function buildThermostatCategoriesHtml(thermostatJSON, thermostatHtml){
@@ -320,10 +321,10 @@ app.controller('certificateController', function(){
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
     /*img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    }*/
+     modal.style.display = "block";
+     modalImg.src = this.src;
+     captionText.innerHTML = this.alt;
+     }*/
     function imgBig(id){
         var img = document.getElementById(id);
         img.onclick = function(){
@@ -350,81 +351,81 @@ app.controller('certificateController', function(){
 });
 
 /*angular.module('website', ['ngAnimate'])
-    .controller('MainCtrl', function ($scope) {
-        $scope.slides = [
-            {image: 'images/potolok3_1920x1200.jpg', description: 'Image 00'},
-            {image: 'images/RomanticHome_9009_1920x1200.jpg', description: 'Image 01'},
-            {image: 'images/боковая%20стена_1920x1200.jpg', description: 'Image 02'}
-        ];
-        $scope.currentIndex = 0;
-        $scope.setCurrentSlideIndex = function (index) {
-            $scope.currentIndex = index;
-        };
-        $scope.isCurrentSlideIndex = function (index) {
-            return $scope.currentIndex === index;
-        };
-        $scope.prevSlide = function () {
-            $scope.currentIndex = ($scope.currentIndex < $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
-        };
-        $scope.nextSlide = function () {
-            $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
-        };
-    })
-    .animation('.slide-animation', function () {
-        return {
-            addClass: function (element, className, done) {
-                if (className == 'ng-hide') {
-                    TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });
-                }
-                else {
-                    done();
-                }
-            },
-            removeClass: function (element, className, done) {
-                if (className == 'ng-hide') {
-                    element.removeClass('ng-hide');
-                    TweenMax.set(element, { left: element.parent().width() });
-                    TweenMax.to(element, 0.5, {left: 0, onComplete: done });
-                }
-                else {
-                    done();
-                }
-            }
-        };
-    });
+ .controller('MainCtrl', function ($scope) {
+ $scope.slides = [
+ {image: 'images/potolok3_1920x1200.jpg', description: 'Image 00'},
+ {image: 'images/RomanticHome_9009_1920x1200.jpg', description: 'Image 01'},
+ {image: 'images/боковая%20стена_1920x1200.jpg', description: 'Image 02'}
+ ];
+ $scope.currentIndex = 0;
+ $scope.setCurrentSlideIndex = function (index) {
+ $scope.currentIndex = index;
+ };
+ $scope.isCurrentSlideIndex = function (index) {
+ return $scope.currentIndex === index;
+ };
+ $scope.prevSlide = function () {
+ $scope.currentIndex = ($scope.currentIndex < $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
+ };
+ $scope.nextSlide = function () {
+ $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
+ };
+ })
+ .animation('.slide-animation', function () {
+ return {
+ addClass: function (element, className, done) {
+ if (className == 'ng-hide') {
+ TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });
+ }
+ else {
+ done();
+ }
+ },
+ removeClass: function (element, className, done) {
+ if (className == 'ng-hide') {
+ element.removeClass('ng-hide');
+ TweenMax.set(element, { left: element.parent().width() });
+ TweenMax.to(element, 0.5, {left: 0, onComplete: done });
+ }
+ else {
+ done();
+ }
+ }
+ };
+ });
 
-*/
+ */
 /*
-app.controller('Dropdown1', ['$scope',function($scope){
-    console.log($(".content"));
-    $scope.dropdownClass='hideContent';
-    $scope.showHide = function(){
-        if ($(".content").hasClass("hideContent")){
-            $scope.dropdownClass = 'showContent';
-            $(".glyphicon").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
-        }
-        else{
-            $scope.dropdownClass = 'hideContent';
-            $(".glyphicon").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
-        }
-    }
-}]);
+ app.controller('Dropdown1', ['$scope',function($scope){
+ console.log($(".content"));
+ $scope.dropdownClass='hideContent';
+ $scope.showHide = function(){
+ if ($(".content").hasClass("hideContent")){
+ $scope.dropdownClass = 'showContent';
+ $(".glyphicon").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+ }
+ else{
+ $scope.dropdownClass = 'hideContent';
+ $(".glyphicon").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+ }
+ }
+ }]);
 
-app.controller('Dropdown2', ['$scope',function($scope){
-    console.log($(".content"));
-    $scope.dropdownClass='hideContent';
-    $scope.showHide = function(){
-        if ($(".content").hasClass("hideContent")){
-            $scope.dropdownClass = 'showContent';
-            $(".glyphicon").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
-        }
-        else{
-            $scope.dropdownClass = 'hideContent';
-            $(".glyphicon").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
-        }
-    }
-}]);
-*/
+ app.controller('Dropdown2', ['$scope',function($scope){
+ console.log($(".content"));
+ $scope.dropdownClass='hideContent';
+ $scope.showHide = function(){
+ if ($(".content").hasClass("hideContent")){
+ $scope.dropdownClass = 'showContent';
+ $(".glyphicon").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+ }
+ else{
+ $scope.dropdownClass = 'hideContent';
+ $(".glyphicon").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+ }
+ }
+ }]);
+ */
 
 
 
@@ -432,12 +433,12 @@ $(document).ready(function () {
 
 
     /*
-    function insertHTML(selector, htmlToInsert){
-        $(selector).html(htmlToInsert);
-    }
-    $.get("snippets/home-snippet.html", function(data){
-        ins
-    });*/
+     function insertHTML(selector, htmlToInsert){
+     $(selector).html(htmlToInsert);
+     }
+     $.get("snippets/home-snippet.html", function(data){
+     ins
+     });*/
     (function (window){
 
 
@@ -464,52 +465,52 @@ $(document).ready(function () {
 
 
         /*$.get(homeHTML, function(data){
-            $("#mainContent").html(data);
-        }).done(function(){
-            //SWIPER
-            var mySwiper = new Swiper ('.swiper-container', {
-                // Optional parameters
-                direction: 'horizontal',
-                loop: true,
-                effect:'coverflow',
-                slidesPerView: 2,
-                centeredSlides: true,
-                grabCursor: true,
-                hashnav:true,
-                // If we need pagination
-                pagination: '.swiper-pagination',
+         $("#mainContent").html(data);
+         }).done(function(){
+         //SWIPER
+         var mySwiper = new Swiper ('.swiper-container', {
+         // Optional parameters
+         direction: 'horizontal',
+         loop: true,
+         effect:'coverflow',
+         slidesPerView: 2,
+         centeredSlides: true,
+         grabCursor: true,
+         hashnav:true,
+         // If we need pagination
+         pagination: '.swiper-pagination',
 
-                // Navigation arrows
-                nextButton: '.swiper-button-next',
-                prevButton: '.swiper-button-prev',
+         // Navigation arrows
+         nextButton: '.swiper-button-next',
+         prevButton: '.swiper-button-prev',
 
-                // And if we need scrollbar
-                scrollbar: '.swiper-scrollbar',
-            });
-            if(window.innerWidth < 992) {
-                mySwiper.slidesPerView = 1;
-                mySwiper.effect = "slide";
-            }
-            //LOAD FOLIE RADIANTA
-            $("#sheets-tile").on("click", function(){
-                $.get("snippets/folieRadianta-snippet.html", function(data){
-                    insertHTML("#mainContent", data);
-                });
+         // And if we need scrollbar
+         scrollbar: '.swiper-scrollbar',
+         });
+         if(window.innerWidth < 992) {
+         mySwiper.slidesPerView = 1;
+         mySwiper.effect = "slide";
+         }
+         //LOAD FOLIE RADIANTA
+         $("#sheets-tile").on("click", function(){
+         $.get("snippets/folieRadianta-snippet.html", function(data){
+         insertHTML("#mainContent", data);
+         });
 
-            });
-            $("#thermostat-tile").on("click", loadThermostatCategories);
-            $(document).ready(function(){
-                $("#panels-tile").on("click", lema.loadProductsCategories);
-            });
-            $("#lighting-tile").on("click", function(){
-                $.get("snippets/iluminareUrgenta-snippet.html", function(data) {
-                    console.log(window.location.href);
-                    insertHTML("#mainContent", data);
-                });
-            });
+         });
+         $("#thermostat-tile").on("click", loadThermostatCategories);
+         $(document).ready(function(){
+         $("#panels-tile").on("click", lema.loadProductsCategories);
+         });
+         $("#lighting-tile").on("click", function(){
+         $.get("snippets/iluminareUrgenta-snippet.html", function(data) {
+         console.log(window.location.href);
+         insertHTML("#mainContent", data);
+         });
+         });
 
-        });
-*/
+         });
+         */
         // LOAD PANOURI RADIANTE
 
         lema.loadProductsCategories = function (){
@@ -593,11 +594,11 @@ $(document).ready(function () {
         };
         function buildAndShowThermostatCategoriesHtml(thermostatJSON){
             $.get("snippets/termostat-title-snippet.html", function(thermostatTitleHtml){
-               $.get("snippets/termostat-snippet.html", function(thermostatHtml){
-                   var thermostatViewHtml=
-                       buildThermostatCategoriesHtml(thermostatJSON, thermostatTitleHtml, thermostatHtml);
-                   insertHTML("#mainContent", thermostatViewHtml);
-               })
+                $.get("snippets/termostat-snippet.html", function(thermostatHtml){
+                    var thermostatViewHtml=
+                        buildThermostatCategoriesHtml(thermostatJSON, thermostatTitleHtml, thermostatHtml);
+                    insertHTML("#mainContent", thermostatViewHtml);
+                })
             });
         }
 

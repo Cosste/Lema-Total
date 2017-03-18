@@ -10,14 +10,15 @@
 panouri radiante pion, panouri radiante pion lux, panouri radiante iasi, folie radianta, folii radiante, termostat de ambient, iluminare de urgenta, iluminare urgenta" />
     <meta name="google-site-verification" content="GNJyXTAjfnRwx_VkdyDYl6GLozwsWOE9JhLqie2LyIE" />
     <meta name="author" content="Stefan-Cosmin Romanescu" />
-    <base href="/">
     <link href="https://panouri-radiante.eu" rel="canonical" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.min.js"></script>
     <script src="js/angular-animate.min.js"></script>
+    <base href="/" />
+</head>
 
 <body>
 
@@ -30,7 +31,7 @@ panouri radiante pion, panouri radiante pion lux, panouri radiante iasi, folie r
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="images/Logo_Lema_Total_Impex_color_changed.png" alt="Logo Lema Total Impex" class="img-responsive navbar-brand center-block"/>
+            <a href="/"><img src="images/Logo_Lema_Total_Impex_color_changed.png" alt="Logo Lema Total Impex" class="img-responsive navbar-brand center-block"/></a>
         </div>
         <ul class="nav navbar-nav navbar-left hidden-sm hidden-xs">
             <li class="navbarContact"><div>Mail: office@sistemeincalzire.com.ro |</div></li>
@@ -38,10 +39,10 @@ panouri radiante pion, panouri radiante pion lux, panouri radiante iasi, folie r
         </ul>
         <div class="collapse navbar-collapse" id="collapsable-nav">
             <ul class="nav navbar-nav navbar-right" id="nav-list">
-                <li><a href="#/acasa">Acasa</a></li>
-                <li><a href="#/produse">Produse</a></li>
-                <li><a href="#/contact">Contact</a></li>
-                <li><a href="#/oferta">Cerere de oferta</a></li>
+                <li><a href="/acasa">Acasa</a></li>
+                <li><a href="/produse">Produse</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/oferta">Cerere de oferta</a></li>
             </ul>
         </div>
     </div><!-- /.container-fluid -->
