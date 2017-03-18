@@ -1,124 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Panouri radiante</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Panouri radiante" />
-    <meta name="keywords" content="panouri radiante, sisteme incalzire, sisteme de incalzire" />
+    <meta name="keywords" content="panouri radiante, sisteme incalzire, sisteme de incalzire, panouri radiante infrarosii, PION,
+panouri radiante pion, panouri radiante pion lux, panouri radiante iasi, folie radianta, folii radiante, termostat de ambient, iluminare de urgenta, iluminare urgenta" />
+    <meta name="google-site-verification" content="GNJyXTAjfnRwx_VkdyDYl6GLozwsWOE9JhLqie2LyIE" />
     <meta name="author" content="Stefan-Cosmin Romanescu" />
+    <link href="https://panouri-radiante.eu" rel="canonical" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <base href="/" />
+</head>
+
 <body>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a href="/"><img src="images/Logo_Lema_Total_Impex_color_changed.png" alt="Logo Lema Total Impex" class="img-responsive navbar-brand center-block"/></a>
         </div>
-        <ul class="nav navbar-nav navbar-left">
-            <li><a href="#">Email</a></li>
-            <li><a href="#">Telefon</a></li>
+        <ul class="nav navbar-nav navbar-left hidden-sm hidden-xs">
+            <li class="navbarContact"><div>Mail: office@sistemeincalzire.com.ro |</div></li>
+            <li class="navbarContact"><div>Tel: 0723570968</div></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Acasa</a></li>
-            <li><a href="#">Produse</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="collapsable-nav">
+            <ul class="nav navbar-nav navbar-right" id="nav-list">
+                <li><a href="/acasa">Acasa</a></li>
+                <li><a href="/produse">Produse</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/oferta">Cerere de oferta</a></li>
+            </ul>
+        </div>
     </div><!-- /.container-fluid -->
 </nav>
 <!-- end navbar -->
 
-<!-- Slider main container -->
-<!-- Sidebar place -->
-
-<!-- /#page-content-wrapper -->
-<div id="mainContent">
-    <div class="container-fluid">
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="images/potolok3_1920x1200.jpg" alt="Panouri radiante"></div>
-                    <div class="swiper-slide"><img src="images/RomanticHome_9009_1920x1200.jpg" alt="Panouri radiante"></div>
-                    <div class="swiper-slide"><img src="images/боковая%20стена_1920x1200.jpg" alt="Panouri radiante"></div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <h2 class="col-xs-12 col-md-4">Despre noi</h2>
-            <p class="col-xs-12 col-md-8">Credem cu tarie in viitorul tehnologiilor verzi, nepoluante. Din acest motiv LEMA TOTAL GRUP, infiintata in 2008, a ales sa mearga pe drumul promovarii active a sistemelor de incalzire cu panouri radiante cu infrarosu.
-
-                Principala noastra preocupare este de a raspunde exigentelor crescande ale clientilor nostri, oferind in acest sens produse certificate de CEA MAI BUNA CALITATE, ORIGINALE, SOLUTII OPTIME si PRETURI adaptate realitatilor romanesti.
-
-                In acest sens amintim doar panourile THERMOGLASS – cea mai noua generatie de panouri radiante din sticla, fabricate cu ajutorul nanotehnologiei, panouri care sunt TRANSPARENTE – UNICE IN ROMANIA. Am ales intotdeauna o INFORMARE CORECTA a clientilor in dauna vanzarilor „DISPERATE” practicate de unii furnizori de astfel de produse. Experienta, pasiunea, seriozitatea si cunostintele noastre cumulate cu profesionalismul colaboratorilor nostri pe linie de proiectare si relatiile excelente de colaborare cu partenerii nostri reprezinta garantia ca oferim solutii si servicii la cele mai inalte standarde. Politica de preţuri practicată cu succes de LEMA TOTAL GRUP, materializată prin preţuri competitive şi atractive, promptitudine în servirea şi rezolvarea problemelor clienţilor asigura premisele stabilirii unor relaţii de colaborare de lungă durată în condiţii reciproc avantajoase.
-            </p>
-        </div>
-    </div>
+<div class="visible-sm visible-xs clickableContacts">
+    <a class="btn" id="callBtn" href="tel:0723570968">
+        <span class="glyphicon glyphicon-earphone"></span> 0723570968
+    </a>
+    <a class="btn" id="emailBtn" href="mailto:office@sistemeincalzire.com.ro"><span class="glyphicon glyphicon-envelope"></span><span>office@sistemeincalzire.com.ro</span></a>
 </div>
 
-<!-- PRODUCTS -->
-<div id="products">
-    <div class="container">
-        <div class="jumbotron">
 
-        </div>
-    </div>
-</div> <!-- END OF PRODUCS -->
+<div ng-view id="mainContent"></div>
+<!--<div id="mainContent"></div> -->
 
-<div id="contact" class="container">
-    <div class="jumbotron">
-
-    </div>
-</div>
 
 <!-- FOOTER -->
 <footer class="panel-footer" id="firstFooter">
     <div class="container">
         <div class="row">
-            <section id="info" class="col-xs-12 col-md-2 col-xs-offset-5">
+            <section id="info">
                 <section id="brand">
-                    Sigla
+                    <img src="images/Logo_Lema_Total_Impex_color_changed.png" alt="Logo Lema Total Impex" class="img-responsive center-block"/>
                 </section>
-                <section id="facebook">
-                    Facebook
-                </section>
-                <section id="adress">
-                    Adress
-                </section>
-                <section id="phoneNumber">
-                    Phone Number
-                </section>
-                <section id="mail">
-                    Email
-                </section>
+                <p id="adress">
+                    Punct de lucru: Str. Vitejilor, nr. 6, sc. 11, tr. II, Iasi
+                </p>
+                <p id="phoneNumber">
+                    Numar telefon: 0723570968
+                </p>
+                <p id="mail">
+                    Email: office@sistemeincalzire.com.ro
+
+                </p>
+                <div class="center-block text-center"><a  href="#/certificate">Certificate</a></div>
             </section>
         </div>
     </div>
@@ -126,7 +87,7 @@
 <footer class="panel-footer" id="secondFooter">
     <div class="container">
         <div class="row">
-            <h6 class="col-xs-2 col-xs-offset-5">All rights reserved</h6>
+            <h6 class="text-center" style="color:#A8A8A8">All rights reserved &copy Lema Total IMPEX</h6>
         </div>
     </div>
 </footer> <!-- END OF FOOTER -->
@@ -134,12 +95,9 @@
 
 
 
-<script src="js/jquery-3.1.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>-->
 <script src="js/script.js"></script>
 </body>
 </html>

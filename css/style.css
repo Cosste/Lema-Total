@@ -1,5 +1,9 @@
 *{
     box-sizing: border-box;
+    text-align: justify;
+}
+* p{
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
 }
 .navbar{
     margin-bottom: 0;
@@ -7,10 +11,74 @@
     border: none;
     box-shadow: none;
 }
-#mainContent{
-    background: #F6F8FA;
-    padding-bottom: 25px;
+.navbar a:hover{
+    text-decoration: underline;
 }
+#mainContent{
+    margin-top: 50px;
+    background: #F6F8FA;
+}
+
+.container{
+    padding:0 25px;
+}
+@media(min-width: 768px) {
+    .navbar-nav > li > a {
+        line-height: 50px !important;
+    }
+    #thermostat-tile{
+        background: url(../images/Termostat/termostate.jpg) no-repeat;
+        background-size:cover;
+        background-position-x: -220px;
+        background-position-y: -20px;
+        cursor:pointer;
+    }
+}
+@media(max-height: 767px){
+    .navbar-header button{
+        top:15px;
+    }
+    .glyphicon-envelope{
+        top:3px;
+        margin-right: 5px;
+    }
+    .glyphicon-earphone{
+        top:3px;
+        margin-right: 5px;
+    }
+    #mainContent{
+        margin-top:0;
+    }
+    .clickableContacts{
+        background: #F6F8FA;
+        padding-top:7px;
+    }
+    #thermostat-tile{
+        background: url(../images/Termostat/termostat_model_q3_small.jpg) no-repeat;
+        background-size:cover;
+        cursor:pointer;
+    }
+}
+
+.navbarContact{
+    margin-top:28px;
+    margin-right:3px;
+    font-size:20px!important;
+}
+img.navbar-brand{
+    position:relative;
+    top:-10px;
+    width:170px;
+    height: auto;
+    padding-bottom: 0;
+}
+
+.panel-footer object{
+    width:170px;
+    height: auto;
+    padding:0;
+}
+
 /*
 .swiper-container img{
 
@@ -18,48 +86,137 @@
     height: 80vh;
 }*/
 
-/* SWIPER START */
-.swiper-container img {
-    width:120%;
-    height:auto;
+#callBtn{
+    font-size: 1.1em;
+    display: block;
+    margin-top:82px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #5bc0de;
+    color: #951c49;
+}
+#emailBtn{
+    font-size: 1.1em;
+    display: block;
+    margin: 5px 0 0 0;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
 }
 
-.swiper-wrapper {
-    height:auto !important;
+
+.carousel{
+    border-radius: 10px;
+}
+#myCarousel{
+    margin-top:5vh;
+    margin-bottom: 3vh;
+    border-radius: 10px;
+    width:80%;
+}
+#myCarousel img{
+    border-radius:10px;
 }
 
-.swiper-slide {
-    height:auto !important;
+
+
+
+
+#largeImgPanel {
+    text-align: center;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background-color: rgba(100,100,100, 0.5);
 }
-.swiper-slide img{
-    border-radius:15px;
-}
-.swiper-slide-next{
-    opacity: 0.99;
-}
-.swiper-slide-prev{
-    opacity:0.99;
+
+/* END SWIPER */
+
+#carousel{
+    padding-bottom: 20px;
 }
 
 #about{
     position:static;
     height: 50%;
     width:100%;
-    background: #373A39;
+    background: #eee;
+    color:#FFFFFF;
 }
 
 /* END SWIPER */
+#products{
+    background: #373A39;
+}
 
-
-#about{
-    color:#FFFFFF;
+#contact{
+    background: #FFF;
 }
 
 #about p{
     margin-top:20px;
     text-align: justify;
+    font-size:14px;
 }
 
+#about{
+    color: rgb(51,51,51);
+    padding:0;
+}
+
+.jumbotron{
+    margin-bottom: 0;
+}
+
+
+#panels-tile, #sheets-tile, #lighting-tile, #thermostat-tile{
+    height: 250px;
+    width:100%;
+    margin-bottom:15px;
+    position:relative;
+    border: 2px solid #3f0c1f;
+    overflow:hidden;
+}
+
+#panels-tile:hover, #sheets-tile:hover, #lighting-tile:hover, #thermostat-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#panels-tile{
+    background: url(../images/PanouriRadiante/panouri_radiante_rezidentiale.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    cursor:pointer;
+}
+#sheets-tile{
+    background: url("../images/FolieRadianta/folii_de_incalzire.jpg") no-repeat;
+    background-size:cover;
+    background-position: center;
+    cursor:pointer;
+}
+#lighting-tile{
+    background:#5e5e5e;
+    background: url(../images/LightBulb/iluminare_de_urgenta_turnul_luminos.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    cursor:pointer;
+}
+
+
+#panels-tile span, #sheets-tile span, #lighting-tile span, #thermostat-tile span{
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    text-align: center;
+    font-size:1.4em;
+    text-transform: uppercase;
+    background-color: #000;
+    color:#fff;
+    opacity:.7;
+}
 
 /*FOOTER */
 
@@ -67,6 +224,9 @@
     /* bg: */
     background: #373A39;
     border: none;
+}
+.panel-footer p{
+    text-align: center !important;
 }
 #phoneNumber {
     /* Adresa numar de tele: */
@@ -87,20 +247,137 @@
     color: #A8A8A8;
     line-height: 32px;
 }
-#facebook {
-    /* FACEBOOK: */
-    font-family: Montserrat-Light;
-    font-size: 12px;
-    color: #FFFFFF;
-    letter-spacing: 4px;
-}
+
 #firstFooter{
     border-top: 1px solid black;
 }
 #secondFooter{
     background: #2A2C2B;
 }
-
+.center-block{
+    float:none; !important;
+}
 /* END FOOTER */
+#sheetsView p{
+    font-size:16px;
+    text-indent: 25px;
+}
 
+.panouriRadianteCategorii{
+    font-size:22px;
+    text-decoration: none;
+}
+.mainTitle{
+    margin-top:9vh;
+}
 
+/* CERTIFICATE */
+#certificat1 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 150px!important;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+.zoom{
+    cursor:pointer;
+    padding: 10px 5px;
+}
+
+.showMore{
+    cursor: pointer;
+}
+
+.showContent{
+    overflow: auto;
+    height: auto;
+}
+.hideContent{
+    overflow: hidden;
+    height: 0;
+}
+
+.transition{
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}

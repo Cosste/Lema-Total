@@ -1,0 +1,269 @@
+<div class="jumbotron" id="sheetsView">
+    <div class="container">
+        <h1>Folii radiante</h1>
+        <h3>Galerie foto <a style="font-size: .6em; cursor:pointer;"> (Click pentru galeria completa)</a></h3>
+        <!-- Page Content -->
+        <script>
+            function showImage(smSrc, lgSrc) {
+                document.getElementById('largeImg').src = smSrc;
+                showLargeImagePanel();
+                unselectAll();
+                setTimeout(function() {
+                    document.getElementById('largeImg').src = lgSrc;
+                }, 1)
+            }
+            function showLargeImagePanel() {
+                document.getElementById('largeImgPanel').style.display = 'block';
+            }
+            function unselectAll() {
+                if(document.selection)
+                    document.selection.empty();
+                if(window.getSelection)
+                    window.getSelection().removeAllRanges();
+            }
+        </script>
+        <img src="images/FolieRadianta/sisteme-de-incalzire-cu-infrarosu-08_resize.jpg" alt="sisteme de incalzire cu infrarosu" style="cursor:pointer"
+             onclick="showImage(this.src, 'images/FolieRadianta/sisteme-de-incalzire-cu-infrarosu-08.jpg');" />
+        <img src="images/FolieRadianta/sisteme-de-incalzire-cu-infrarosu-09_resize.jpg" alt="sisteme de incalzire cu infrarosu" style="cursor:pointer"
+             onclick="showImage(this.src, 'images/FolieRadianta/sisteme-de-incalzire-cu-infrarosu-09.jpg');" />
+        <img src="images/FolieRadianta/sisteme-de-incalzire-cu-infrarosu-10_resize.jpg" alt="sisteme de incalzire cu infrarosu" style="cursor:pointer"
+             onclick="showImage(this.src, 'images/FolieRadianta/sisteme-de-incalzire-cu-infrarosu-10.jpg');" />
+
+        <div id="largeImgPanel" onclick="this.style.display='none'">
+            <img id="largeImg"
+                 style="height:100%; margin:0; padding:0;" />
+        </div>
+
+
+        <article>
+            <section>
+                <h2>Încălzirea cu folie radiantă</h2>
+                <p>Încălzirea cu folie radiantă este indirectă. Căldura este transferată de la panou spre suprafețe cum ar fi podele, pereți, mobilă, persoane, care la rândul lor o eliberează, încălzind aerul din încăpere. Odată ce temperatura atinge un nivel presetat, termostatul va opri sistemul de alimentare cu energie şi începe o perioadă de inactivitate a sistemului de încălzire, a cărui durată depăşeşte cu mult perioada de activitate a sistemului. Dacă temperatura scade în cameră cu un grad, sistemul comută automat pentru a reface pierderile de căldură. Nici o pierdere nu apare pe traseul de la tavan la podea. Încălzirea radiantă poate fi comparată cu lumina. Dispersia și reflecția apar relativ în același mod.</p>
+                <p>Folia radiantă creează o egalizare a distribuției temperaturii pe înălțime, între tavan și podea. Astfel, se evită formarea pernelor de aer supraîncălzit care se localizează în zona tavanului atunci când sunt utilizate alte sisteme de încălzire. Încălzirea camerelor cu tavane înalte cu ajutorul panourilor radiante dă posibilitatea scăderii semnificative a consumului de energie. Aria de aplicare este deosebit de mare: case, vile, garaje, spații comerciale, spații culturale, unități medicale, spitale, în general orice spațiu cu înălțimea mai mică de 4 metri.</p>
+                <p><b>Consumul de energie estimat pentru sezonul de încălzire este de:</b></p>
+                <ul>
+                    <li>case – 10 W/h/mp suprafață încălzită</li>
+                    <li>apartamente – 15 W/h/mp suprafață încălzită</li>
+                    <li>spații administrative - 15-20 W/h/mp suprafață încălzită</li>
+                </ul>
+                <p><b>Aceste consumuri se realizează în următoarele condiţii:</b></p>
+                <ul>
+                    <li>construcția (camera) a intrat pe regimul încălzit (acest proces durează până la 4 săptămâni)</li>
+                    <li>construcția să aibă o izolație corespunzătoare</li>
+                    <li>înălţimea tavanului nu depăşeşte 3 metri pentru spaţiile rezidenţiale</li>
+                    <li>temperatura termostatului este de + 20°C</li>
+                    <li>ventilaţie naturală (fără ventilare forţată)</li>
+                    <li>tensiunea rețelei de electricitate corespunde cu tensiunea nominală a produsului</li>
+                </ul>
+            </section>
+        </article>
+        <article>
+            <section ng-controller="Dropdown1">
+                <h2>Elementele foliei radiante</h2>
+                <p>Sistemul de încălzire ZEBRA se prezintă sub formă de folie, se atașează pe tavan, este acoperit cu
+                    tavanul fals (gips-carton, lemn, etc.), conectat electric și controlat de termostatele de ambient și
+                    încălzește prin raze infraroșii obiectele din camera (pereți, podea, etc. obiecte care la rândul lor
+                    încălzesc aerul).</p>
+                <p>ZEBRA respectă principiul natural al transferului de căldură, astfel fluxul de căldură de la elementele sistemului montate pe tavan se transmite direct pardoselii , pereților, iar acestea transferă căldură stocată aerului.</p>
+
+                <h3 class="showMore" ng-click="showHide()">Construcția și proprietățile elementelor de încălzire <span class="glyphicon glyphicon-chevron-down"></span></h3>
+                <div class="content hideContent" ng-class="dropdownClass">
+                    <p>Elementele de încălzire se compun din două folii electroizolante între care se află elementul radiant, care este compus din conductori electrici și un ecran de aluminiu, de grosime totală 0,3-0,4 mm. Conductorii electrici sunt confecționați dintr-un aliaj de metale prețioase care asigură valoarea necesară rezistenței și sunt poziționați în formă de zig-zag.</p>
+                    <p>Elementul de încălzire are în componența sa cablul pentru conectarea la rețea. La trecerea curentului electric prin conductor (foiță rezistivă încălzitoare) acesta se încălzește până la 45 ºC. Căldura emisă se transmite către foița de aluminiu a cărei suprafață se încălzește până la 43-44 ºC și radiază căldură sub formă de raze infraroșii. Datorită acestui fapt, la suprafața plafonului temperatura ajunge la 30-32 ºC.</p>
+                    <img class="img-responsive" src="images/FolieRadianta/incalzirea_cu_folii_radiante.jpg"
+                         alt="Elementele foliei radiante"/>
+                    <p>Una dintre calitățile importante este durata mare de viață a sistemului. Termenul de garanție de la data montării este de 10 ani. Timpul de exploatare din momentul montajului depășește 25 de ani. O asemenea durată de exploatare se atinge datorită faptului că, în regim de funcționare, elementele componente ale sistemului au regim de temperatură de stocare: materialul rezistiv are temperatura de topire mai mare de 1500 ºC, ecranul de aluminiu mai mare de 600 ºC, iar folia din polimeri mai mare de 350 ºC.</p>
+                    <p>Sistemul este relativ ușor (un m2 are aprox. 500 g), flexibil, se poate transporta și depozita în rulouri cu diametrul interior de 8 - 10 cm. Nu necesită servicii de întreținere, e inofensiv și ecologic.</p>
+                </div>
+            </section>
+            <section ng-controller="Dropdown2">
+                <h3 class="showMore" ng-click="showHide()">Aria de aplicabilitate <span class="glyphicon glyphicon-chevron-down"></span></h3>
+                <div class="content hideContent" ng-class="dropdownClass">
+                    <p>Sistemele de încălzire cu infraroşu au o arie de aplicabilitate foarte largă, putând fi folosite cu succes la:</p>
+                    <h6>Locuinţe</h6>
+                    <p>Sistemul de încălzire ZEBRA este ideal atât pentru construcţiile noi, cât şi pentru reamenajarea celor vechi. Dacă veţi alege acest sistem de încălzire, veţi economisi chiar din etapa de proiectare pentru că nu mai aveţi nevoie de:</p>
+                    <ul>
+                        <li>încăpere pentru centrala termică, depozit sau recipient pentru combustibil</li>
+                        <li>ţevi și radiatoare pentru transportul agentului termic ce ocupă spaţiu util</li>
+                        <li>nu veţi mai respira gaze, cărbune ars sau combustibil, nu trebuie să curăţaţi hornul permanent;</li>
+                        <li>încălzirea cu raze infraroşii va înlătura umezeala şi mucegaiul, încălzind și menţinând temperatura confortabilă în fiecare încăpere a casei.</li>
+                    </ul>
+                    <h6>Instituții publice, birouri, spații comerciale</h6>
+                    <p>Este mai plăcut să lucrezi în birouri, atunci când nu "pluteşte" praf de hârtie ridicat de aerul încălzit de sistemul de încălzire. Sistemele de comandă fac posibilă alegerea individuală a temperaturii pentru fiecare încăpere a biroului.</p>
+                    <h6>Şcoli, grădiniţe, spitale</h6>
+                    <p>Cel mai bun sistem de încălzire pentru încăperile pentru copii este sistemul de încălzire cu raze infraroşii, deoarece:</p>
+                    <ul>
+                        <li>este comod și sigur</li>
+                        <li>nu creează curenţi de convecţie</li>
+                        <li>elimină plutirea prafului prin aer</li>
+                        <li>creează efectul "podelii calde" protejând copiii de răceli</li>
+                        <li>sistemul este ideal de utilizat în spitale deoarece este un sistem de încălzire curat care nu creează curenţi de aer ce antrenează praful nici prin convecţie nici din ventilatoare şi filtre</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2>Caracteristici tehnice ale foliei radiante</h2>
+                <div class="col-xs-3"><img class="img-responsive" src="images/FolieRadianta/componente_folii_de_incalzire_zebra_small.jpg" alt="Caracteristici tehnice ale foliei radiante"/></div>
+                <div class="col-xs-9">
+                    <ol>
+                        <li>cabluri conexiune</li>
+                        <li>cablu împământare</li>
+                        <li>folie dielectrica din polimer</li>
+                        <li>element de încălzire</li>
+                        <li>ecran reflector</li>
+                        <li>suprafață transparentă folosita pentru montaj</li>
+                    </ol>
+                    <ul>
+                        <li>tensiunea: 220V</li>
+                        <li>intensitatea curentului: 0.9 A/mp</li>
+                        <li>capacitatea (puterea) la suprafață: 200 W/mp</li>
+                        <li>temperatura la suprafata: 45ºC</li>
+                        <li>lungimea: variabila (conform tabel)</li>
+                        <li>lățimea: 0.5 m</li>
+                        <li>grosimea: 0.35 mm</li>
+                        <li>masa: 550g/mp</li>
+                        <li>grad de protecție IP 44</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h3>Gama de dimensiuni și caracteristici tehnice specifice</h3>
+                <table class="table-hover table-responsive">
+                    <tr>
+                        <th>Lungime(m)</th>
+                        <th>Lățime(m)</th>
+                        <th>Suprafață(mp.)</th>
+                        <th>Tensiune(V)</th>
+                        <th>Putere(W)</th>
+                    </tr>
+                    <tr>
+                        <td>4.15</td>
+                        <td>0.50</td>
+                        <td>2.08</td>
+                        <td>220</td>
+                        <td>415</td>
+                    </tr>
+                    <tr>
+                        <td>3.15</td>
+                        <td>0.50</td>
+                        <td>1.58</td>
+                        <td>220</td>
+                        <td>315</td>
+                    </tr>
+                    <tr>
+                        <td>2.10</td>
+                        <td>0.50</td>
+                        <td>1.05</td>
+                        <td>220</td>
+                        <td>210</td>
+                    </tr>
+                    <tr>
+                        <td>1.60</td>
+                        <td>0.50</td>
+                        <td>0.80</td>
+                        <td>220</td>
+                        <td>160</td>
+                    </tr>
+                    <tr>
+                        <td>0.80</td>
+                        <td>0.50</td>
+                        <td>0.40</td>
+                        <td>110</td>
+                        <td>80</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <p>Sistemul de încălzire are certificat de garanție și CE.</p>
+                <p>Certificatul corespunde nr. POCC RU.ME55.HOO882</p>
+                <p>Certificat sanitar-epidemiologic nr. 745.006.576.-006.720.405.</p>
+                <p>Contract cu Centrul de Științe Medicale (sistemul poate fi utilizat și pentru încălzirea sălilor de clasă sau a altor locații destinate copiilor, cu condiția respectării normelor de protecție).</p>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2>Avantajele foliei radiante</h2>
+                <h3>ECONOMIE</h3>
+                <ul>
+                    <li>Investiție inițială mai mică decât în cazul sistemelor convenționale;</li>
+                    <li>Cheltuieli ulterioare cu întreținerea = zero</li>
+                    <li>Economie de energie - randament 95%</li>
+                    <li>Folia radiantă încălzește întâi persoanele și obiectele și apoi aerul înconjurător. Acest lucru permite reducerea temperaturii fără a afecta nivelul de confort. Astfel, la o temperatura de 20°C, pe termostatul de ambient temperatura resimțită de persoane va fi de 22°C;</li>
+                    <li>Folia radiantă încălzește instant, deci mult mai repede decât sistemele de încălzire tradiționale. "Soarele din casă" poate, într-o oră, să ridice temperatura din încăpere cu 10°C cu un minim consum de energie electrică;</li>
+                    <li>Eficacitate energetică - consum mediu de 10 – 20 W/mp în cazul în care înălțimea locației e până la 3,5m</li>
+                </ul>
+            </section>
+            <section>
+                <h3>CONFORT TERMIC</h3>
+                <ul>
+                    <li>Confort termic maxim - încălzirea se face de la podea în sus. Astfel, la nivelul podelei temperatura va fi mai mare decât la nivelul capului cu 2°C</li>
+                    <li>Aerul nu este încălzit direct – rezultatul este un climat interior confortabil, fără curenți de aer chiar la o temperatura mai mică</li>
+                    <li>Nu cauzează mișcarea aerului așa cum se întâmplă la sistemele de încălzire tradiționale. Reducerea răspândirii prafului, bacteriilor și mirosurilor îmbunătățește calitatea mediului interior</li>
+                </ul>
+            </section>
+            <section>
+                <h3>ECOLOGIC</h3>
+                <ul>
+                    <li>Nu arde oxigen</li>
+                    <li>Nu usucă aerul deci nu necesită sistem de ventilație</li>
+                    <li>Nu produce aburi</li>
+                    <li>Normalizează umiditatea in cameră</li>
+                    <li>Previne apariția mucegaiului</li>
+                    <li>Nu creează curenți de convecție, eliminând plutirea prafului in aer</li>
+                </ul>
+            </section>
+            <section>
+                <h3>ALTE AVANTAJE</h3>
+                <ul>
+                    <li>Garanție 10 ani</li>
+                    <li>Durată mare de viață: 25 - 30 ani</li>
+                    <li>Siguranță la foc</li>
+                    <li>Instalare simplă și flexibilă</li>
+                    <li>Montând folia pe tavan salvăm spațiu de pe podea și pereți</li>
+                    <li>Sistemul este foarte silențios</li>
+                    <li>Sistemul asigură o încălzire discretă, fiind montat sub tavanul fals</li>
+                </ul>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2>Instalarea sistemului ZEBRA</h2>
+                <p>Sistemul este compus din două părți funcționale, elementele de încălzire și sistemul de reglare (termostat). Elementele de încălzire se montează pe plafon și se recomandă să acopere între 60-80% din suprafața acestuia. Diferența de temperatură între podea și plafon va fi de 4º C pentru încăperi cu înălțime maximă de 3m.</p>
+                <ol>
+                    <li>Montajul direct pe tavanul de beton</li>
+                    <p>Se acoperă tavanul în proporție de 100% cu un material termoizolant și reflectorizant (ex.: izolon). Se recomanda a se lăsa 2-3 cm de material să acopere pereții de-a lungul întregului perimetru pentru a evita punțile reci care se pot forma între tavan și pereți. Se dau găuri în tavan și izolon pentru a putea prinde colțurile materialului. Apoi se dau găuri la 0,5 m una de alta pentru a putea alinia și întinde izolonul, astfel evitând formarea de bule de aer sau praf sub material. Se recomandă următoarele benzi de izolon să se suprapună 3-4 cm pentru a fi siguri de reflectarea 100% a căldurii. După instalarea materialului termoizolant și reflectorizant se trece la montajul foliei ZEBRA conform proiectului de lucru al locației respective.</p>
+                    <p><b>ATENTIE!!! Găurirea și prinderea foliilor se face numai pe zonele transparente, evitându-se astfel compromiterea funcționării elementelor conductoare. Este important ca suprafața tavanului să fie plană.</b></p>
+                    <li>Montajul pe PAL, OSB, plastic, gipscarton</li>
+                    <p>Instalarea se realizează în acelaşi mod ca şi în plafoanele de beton, singura diferență fiind dată de modalitatea de prindere a foliei Zebra cu capse.</p>
+                    <li>Montajul sub un tavan fals</li>
+                    <p>Se montează izolonul pe toată suprafața tavanului. Se montează apoi profilele metalice de susținere a decorului (gipscarton, plastic, lemn) la 60 cm distanță unele de altele. Se montează apoi elementele de folie Zebra, se fac legăturile la capete și apoi se poate trece la montajul decorului. Este recomandat ca între folia Zebra și decorul folosit să fie o distanță de 10 – 150 mm.</p>
+                    <h5><b>IMPORTANT! Elementele de folie Zebra se leagă în paralel ( + la + și - la - ).</b></h5>
+                </ol>
+            </section>
+            <section>
+                <h3>Instrucțiuni de operare a sistemului ZEBRA</h3>
+                <h5>Exemplu de calcul sistem de încălzire folie Zebra:</h5>
+                <ul>
+                    <li>Locuință cu o înălțime de 2.7m</li>
+                    <li>Suprafaţă utilă de 80 mp</li>
+                    <li>Temperatura interioara: 20ºC</li>
+                    <li>Izolaţii - termosistem 10 cm</li>
+                    <li>Locație: Iași</li>
+                    <li>Tipul de finisaj tavan: tavan fals</li>
+                </ul>
+                <p>Pentru zona Iași procentul de acoperire cu folie a tavanului este de 60%.</p>
+                <p>Necesar folie : 80mp x 60% = 48mp</p>
+                <p>Putere instalata necesara : 48mp x 200W/mp = 9600W = 9,6 KW (200W reprezintă puterea maximă pentru 1mp de folie).</p>
+                <p>Dacă puterea instalată nu este suficientă se recomandă folosirea releelor de prioritate (relee inteligente) care permit dezactivarea temporară a unor zone neprioritare ale circuitului de încălzire. Prin folosirea acestor relee puterea necesară poate fi redusă la jumătate.</p>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2>Certificat CE</h2>
+                <img class="img-responsive" src="images/FolieRadianta/certificat_ce_small.jpg" alt="Certificat CE"/>
+            </section>
+        </article>
+    </div>
+</div>
